@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="4.6.2 -O0 -nostartfiles -Map=board.map -mcpu=cortex-m3 -mthumb -LC:\CooCox\CoIDE\workspace\ecg\board --gc-sections -TC:\CooCox\CoIDE\workspace\ecg\board\link.ld -g">
+      <target file="board.elf" lastModified="13ac66ca231">
+         <source file="..\obj\bluetooth.o" lastModified="13ac66c90d3"/>
+         <source file="..\obj\stm32f10x_rtc.o" lastModified="13ac66c912d"/>
+         <source file="..\obj\semihosting.o" lastModified="13ac66c9187"/>
+         <source file="..\obj\iir_stm32.o" lastModified="13ac66c91eb"/>
+         <source file="..\obj\core_cm3.o" lastModified="13ac66c9231"/>
+         <source file="..\obj\timersystem.o" lastModified="13ac66c9295"/>
+         <source file="..\obj\PID_C_stm32.o" lastModified="13ac66c92ef"/>
+         <source file="..\obj\rtc.o" lastModified="13ac66c934a"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="13ac66c93a4"/>
+         <source file="..\obj\stm32f10x_pwr.o" lastModified="13ac66c93f4"/>
+         <source file="..\obj\diskio.o" lastModified="13ac66c946c"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="13ac66c94da"/>
+         <source file="..\obj\stm32f10x_dac.o" lastModified="13ac66c9534"/>
+         <source file="..\obj\main.o" lastModified="13ac66c958e"/>
+         <source file="..\obj\maintask.o" lastModified="13ac66c95f3"/>
+         <source file="..\obj\cr4_fft_64_stm32.o" lastModified="13ac66c95fd"/>
+         <source file="..\obj\printf.o" lastModified="13ac66c9661"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="13ac66c96e3"/>
+         <source file="..\obj\PID_stm32.o" lastModified="13ac66c96ed"/>
+         <source file="..\obj\startup_stm32f10x_cl.o" lastModified="13ac66c9715"/>
+         <source file="..\obj\storage.o" lastModified="13ac66c9779"/>
+         <source file="..\obj\frontend.o" lastModified="13ac66c9819"/>
+         <source file="..\obj\stm32f10x_exti.o" lastModified="13ac66c9888"/>
+         <source file="..\obj\stm32f10x_adc.o" lastModified="13ac66c990a"/>
+         <source file="..\obj\stm32f10x_usart.o" lastModified="13ac66c9982"/>
+         <source file="..\obj\leds.o" lastModified="13ac66c99e6"/>
+         <source file="..\obj\sh_cmd.o" lastModified="13ac66c99f0"/>
+         <source file="..\obj\syscalls.o" lastModified="13ac66c9a2c"/>
+         <source file="..\obj\cr4_fft_1024_stm32.o" lastModified="13ac66c9a36"/>
+         <source file="..\obj\stm32f10x_flash.o" lastModified="13ac66c9aae"/>
+         <source file="..\obj\SPI_flash.o" lastModified="13ac66c9b12"/>
+         <source file="..\obj\ff.o" lastModified="13ac66c9c67"/>
+         <source file="..\obj\misc.o" lastModified="13ac66c9cb7"/>
+         <source file="..\obj\SD_card.o" lastModified="13ac66c9d1b"/>
+         <source file="..\obj\stm32_eval_spi_flash.o" lastModified="13ac66c9da7"/>
+         <source file="..\obj\stm32f10x_spi.o" lastModified="13ac66c9e20"/>
+         <source file="..\obj\filter.o" lastModified="13ac66c9e8e"/>
+         <source file="..\obj\fattime.o" lastModified="13ac66c9ed4"/>
+         <source file="..\obj\battery.o" lastModified="13ac66c9f2e"/>
+         <source file="..\obj\fir_stm32.o" lastModified="13ac66c9f38"/>
+         <source file="..\obj\stm32f10x_bkp.o" lastModified="13ac66c9f88"/>
+         <source file="..\obj\iirarma_stm32.o" lastModified="13ac66c9f92"/>
+         <source file="..\obj\cr4_fft_256_stm32.o" lastModified="13ac66c9f9c"/>
+      </target>
+   </processor>
+</history>

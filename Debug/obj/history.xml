@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -g -ffunction-sections -Wall -pedantic -std=iso9899:1999 -O0 -c -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -DSTM32F105VB -I. -Isemihosting -Icmsis -Istm_lib -Iinc -ISTM32_USB-FS-Device_Driver\inc -IUSB_MASS_STORAGE\inc -IFAT\src -Istm_lib\inc -Istm_lib\src -Isrc -Isyscalls -Istdio -Icmsis_boot">
+      <target file="stm32f10x_exti.o" lastModified="13ac66c9888">
+         <source file="..\..\stm_lib\src\stm32f10x_exti.c" lastModified="139a1eca867"/>
+      </target>
+      <target file="syscalls.o" lastModified="13ac66c9a2c">
+         <source file="..\..\syscalls\syscalls.c" lastModified="139a1eca871"/>
+      </target>
+      <target file="stm32f10x_gpio.o" lastModified="13ac66c94da">
+         <source file="..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="139a1eca867"/>
+      </target>
+      <target file="storage.o" lastModified="13ac66c9779">
+         <source file="..\..\src\storage.c" lastModified="139a1eca80d"/>
+      </target>
+      <target file="misc.o" lastModified="13ac66c9cb7">
+         <source file="..\..\stm_lib\src\misc.c" lastModified="139a1eca85d"/>
+      </target>
+      <target file="PID_C_stm32.o" lastModified="13ac66c92ef">
+         <source file="..\..\src\PID_C_stm32.c" lastModified="139a1eca7f9"/>
+      </target>
+      <target file="cr4_fft_256_stm32.o" lastModified="13ac66c9f9c">
+         <source file="..\..\src\asm\gcc\cr4_fft_256_stm32.s" lastModified="139a1eca803"/>
+      </target>
+      <target file="sh_cmd.o" lastModified="13ac66c99f0">
+         <source file="..\..\semihosting\sh_cmd.s" lastModified="139a1eca7f9"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="13ac66c93a4">
+         <source file="..\..\cmsis_boot\system_stm32f10x.c" lastModified="139a1eca7e5"/>
+      </target>
+      <target file="stm32f10x_usart.o" lastModified="13ac66c9982">
+         <source file="..\..\stm_lib\src\stm32f10x_usart.c" lastModified="139a1eca871"/>
+      </target>
+      <target file="diskio.o" lastModified="13ac66c946c">
+         <source file="..\..\FAT\src\diskio.c" lastModified="139a1eca781"/>
+      </target>
+      <target file="cr4_fft_64_stm32.o" lastModified="13ac66c95fd">
+         <source file="..\..\src\asm\gcc\cr4_fft_64_stm32.s" lastModified="139a1eca803"/>
+      </target>
+      <target file="filter.o" lastModified="13ac66c9e8e">
+         <source file="..\..\src\filter.c" lastModified="139a1eca803"/>
+      </target>
+      <target file="frontend.o" lastModified="13ac66c9819">
+         <source file="..\..\src\frontend.c" lastModified="13ac66c83d6"/>
+      </target>
+      <target file="stm32_eval_spi_flash.o" lastModified="13ac66c9da7">
+         <source file="..\..\src\stm32_eval_spi_flash.c" lastModified="139a1eca80d"/>
+      </target>
+      <target file="fattime.o" lastModified="13ac66c9ed4">
+         <source file="..\..\FAT\src\fattime.c" lastModified="139a1eca781"/>
+      </target>
+      <target file="stm32f10x_flash.o" lastModified="13ac66c9aae">
+         <source file="..\..\stm_lib\src\stm32f10x_flash.c" lastModified="139a1eca867"/>
+      </target>
+      <target file="maintask.o" lastModified="13ac66c95f3">
+         <source file="..\..\src\maintask.c" lastModified="13a326b22f0"/>
+      </target>
+      <target file="iirarma_stm32.o" lastModified="13ac66c9f92">
+         <source file="..\..\src\asm\gcc\iirarma_stm32.s" lastModified="139a1eca803"/>
+      </target>
+      <target file="battery.o" lastModified="13ac66c9f2e">
+         <source file="..\..\src\battery.c" lastModified="139a1eca803"/>
+      </target>
+      <target file="SD_card.o" lastModified="13ac66c9d1b">
+         <source file="..\..\src\SD_card.c" lastModified="139a1eca7f9"/>
+      </target>
+      <target file="timersystem.o" lastModified="13ac66c9295">
+         <source file="..\..\src\timersystem.c" lastModified="139a1eca80d"/>
+      </target>
+      <target file="bluetooth.o" lastModified="13ac66c90d3">
+         <source file="..\..\src\bluetooth.c" lastModified="13a326a0de6"/>
+      </target>
+      <target file="stm32f10x_rtc.o" lastModified="13ac66c912d">
+         <source file="..\..\stm_lib\src\stm32f10x_rtc.c" lastModified="139a1eca867"/>
+      </target>
+      <target file="stm32f10x_rcc.o" lastModified="13ac66c96e3">
+         <source file="..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="139a1eca867"/>
+      </target>
+      <target file="stm32f10x_dac.o" lastModified="13ac66c9534">
+         <source file="..\..\stm_lib\src\stm32f10x_dac.c" lastModified="139a1eca867"/>
+      </target>
+      <target file="core_cm3.o" lastModified="13ac66c9231">
+         <source file="..\..\cmsis\core_cm3.c" lastModified="139a1eca7d1"/>
+      </target>
+      <target file="stm32f10x_pwr.o" lastModified="13ac66c93f4">
+         <source file="..\..\stm_lib\src\stm32f10x_pwr.c" lastModified="139a1eca867"/>
+      </target>
+      <target file="fir_stm32.o" lastModified="13ac66c9f38">
+         <source file="..\..\src\asm\gcc\fir_stm32.s" lastModified="139a1eca803"/>
+      </target>
+      <target file="cr4_fft_1024_stm32.o" lastModified="13ac66c9a36">
+         <source file="..\..\src\asm\gcc\cr4_fft_1024_stm32.s" lastModified="139a1eca7f9"/>
+      </target>
+      <target file="leds.o" lastModified="13ac66c99e6">
+         <source file="..\..\src\leds.c" lastModified="139a1eca80d"/>
+      </target>
+      <target file="stm32f10x_adc.o" lastModified="13ac66c990a">
+         <source file="..\..\stm_lib\src\stm32f10x_adc.c" lastModified="139a1eca85d"/>
+      </target>
+      <target file="printf.o" lastModified="13ac66c9661">
+         <source file="..\..\stdio\printf.c" lastModified="139a1eca80d"/>
+      </target>
+      <target file="stm32f10x_bkp.o" lastModified="13ac66c9f88">
+         <source file="..\..\stm_lib\src\stm32f10x_bkp.c" lastModified="139a1eca85d"/>
+      </target>
+      <target file="rtc.o" lastModified="13ac66c934a">
+         <source file="..\..\FAT\src\rtc.c" lastModified="139a1eca78b"/>
+      </target>
+      <target file="PID_stm32.o" lastModified="13ac66c96ed">
+         <source file="..\..\src\asm\gcc\PID_stm32.s" lastModified="139a1eca7f9"/>
+      </target>
+      <target file="SPI_flash.o" lastModified="13ac66c9b12">
+         <source file="..\..\src\SPI_flash.c" lastModified="139a1eca7f9"/>
+      </target>
+      <target file="ff.o" lastModified="13ac66c9c67">
+         <source file="..\..\FAT\src\ff.c" lastModified="139a1eca781"/>
+      </target>
+      <target file="main.o" lastModified="13ac66c958e">
+         <source file="..\..\src\main.c" lastModified="139a1eca80d"/>
+      </target>
+      <target file="semihosting.o" lastModified="13ac66c9187">
+         <source file="..\..\semihosting\semihosting.c" lastModified="13a3271a4ed"/>
+      </target>
+      <target file="startup_stm32f10x_cl.o" lastModified="13ac66c9715">
+         <source file="..\..\cmsis_boot\startup\startup_stm32f10x_cl.c" lastModified="13a3277d67d"/>
+      </target>
+      <target file="iir_stm32.o" lastModified="13ac66c91eb">
+         <source file="..\..\src\iir_stm32.c" lastModified="139a1eca80d"/>
+      </target>
+      <target file="stm32f10x_spi.o" lastModified="13ac66c9e20">
+         <source file="..\..\stm_lib\src\stm32f10x_spi.c" lastModified="139a1eca871"/>
+      </target>
+   </processor>
+</history>

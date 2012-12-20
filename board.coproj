@@ -1,0 +1,1104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Project version="2G">
+  <Target name="board_Target_Flash" isCurrent="1">
+    <Device manufacturerId="9" manufacturerName="ST" chipId="336" chipName="STM32F105VB" boardId="" boardName=""/>
+    <BuildOption>
+      <Compile>
+        <Option name="OptimizationLevel" value="0"/>
+        <Option name="UseFPU" value="0"/>
+        <Option name="UserEditCompiler" value="-std=iso9899:1999; -pedantic"/>
+        <Includepaths>
+          <Includepath path="."/>
+        </Includepaths>
+        <DefinedSymbols>
+          <Define name="STM32F105VB"/>
+          <Define name="STM32F10X_CL"/>
+          <Define name="USE_STDPERIPH_DRIVER"/>
+          <Define name="__ASSEMBLY__"/>
+        </DefinedSymbols>
+      </Compile>
+      <Link useDefault="0">
+        <Option name="DiscardUnusedSection" value="0"/>
+        <Option name="UseCLib" value="0"/>
+        <Option name="UserEditLinkder" value=""/>
+        <Option name="UseMemoryLayout" value="1"/>
+        <Option name="DiscardUnusedSections" value="1"/>
+        <Option name="Library" value="0"/>
+        <LinkedLibraries/>
+        <MemoryAreas debugInFlashNotRAM="1">
+          <Memory name="IROM1" type="ReadOnly" size="0x00020000" startValue="0x08000000"/>
+          <Memory name="IRAM1" type="ReadWrite" size="0x00008000" startValue="0x20000000"/>
+          <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
+          <Memory name="IRAM2" type="ReadWrite" size="" startValue=""/>
+        </MemoryAreas>
+        <LocateLinkFile path="C:\CooCox\CoIDE\workspace\board_Target_Flash\link.ld" type="0"/>
+      </Link>
+      <Output>
+        <Option name="OutputFileType" value="0"/>
+        <Option name="Path" value="C:/CooCox/CoIDE/workspace/ecg/board"/>
+        <Option name="Name" value="board_Target_Flash"/>
+        <Option name="HEX" value="1"/>
+        <Option name="BIN" value="1"/>
+      </Output>
+      <User>
+        <UserRun name="Run#1" type="Before" checked="0" value=""/>
+        <UserRun name="Run#1" type="After" checked="0" value=""/>
+      </User>
+    </BuildOption>
+    <DebugOption>
+      <Option name="org.coocox.codebugger.gdbjtag.core.adapter" value="ST-Link"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.debugMode" value="SWD"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.clockDiv" value="1M"/>
+      <Option name="org.coocox.codebugger.gdbjtag.corerunToMain" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkgdbserver" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.userDefineGDBScript" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.targetEndianess" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkResetMode" value="Type 0: Normal"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.resetMode" value="SYSRESETREQ"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifSemihost" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifCacheRom" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ipAddress" value="127.0.0.1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.portNumber" value="2009"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.autoDownload" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.verify" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.downloadFuction" value="Erase Effected"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.defaultAlgorithm" value="C:/CooCox/CoIDE/flash/STM32F10x_CL_128.elf"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jflashtool" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.coredebugInRam" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jflashscript" value=""/>
+    </DebugOption>
+    <ExcludeFile>
+      <File name="timersystem.c" path="../timersystem.c" type="1"/>
+      <File name="main.cpp" path="../serialreceiver/src/main.cpp" type="1"/>
+      <File name="mainwindow.cpp" path="../serialreceiver/src/mainwindow.cpp" type="1"/>
+      <File name="mainwindow.h" path="../serialreceiver/src/mainwindow.h" type="1"/>
+      <File name=".qcustomplot.cpp" path="../serialreceiver/src/qcustomplot/.qcustomplot.cpp" type="1"/>
+      <File name="qcustomplot.cpp" path="../serialreceiver/src/qcustomplot/qcustomplot.cpp" type="1"/>
+      <File name="qcustomplot.h" path="../serialreceiver/src/qcustomplot/qcustomplot.h" type="1"/>
+      <File name="serialreader.cpp" path="../serialreceiver/src/serialreader.cpp" type="1"/>
+      <File name="serialreader.h" path="../serialreceiver/src/serialreader.h" type="1"/>
+      <File name="bluetooth.cpp" path="../serialemulation[pc]/src/bluetooth.cpp" type="1"/>
+      <File name="bluetooth.h" path="../serialemulation[pc]/src/bluetooth.h" type="1"/>
+      <File name="main.cpp" path="../serialemulation[pc]/src/main.cpp" type="1"/>
+      <File name="serialreader.cpp" path="../serialemulation[pc]/src/serialreader.cpp" type="1"/>
+      <File name="serialreader.h" path="../serialemulation[pc]/src/serialreader.h" type="1"/>
+      <File name="task1_frontend.c" path="../task1_frontend.c" type="1"/>
+      <File name="task5_usb.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/task5_usb.c" type="1"/>
+      <File name="coocox.h" path="../../../../../home/pancho/git/ecg/coos/kernel/coocox.h" type="1"/>
+      <File name="coos.h" path="../../../../../home/pancho/git/ecg/coos/kernel/coos.h" type="1"/>
+      <File name="core.c" path="../../../../../home/pancho/git/ecg/coos/kernel/core.c" type="1"/>
+      <File name="event.c" path="../../../../../home/pancho/git/ecg/coos/kernel/event.c" type="1"/>
+      <File name="flag.c" path="../../../../../home/pancho/git/ecg/coos/kernel/flag.c" type="1"/>
+      <File name="hook.c" path="../../../../../home/pancho/git/ecg/coos/kernel/hook.c" type="1"/>
+      <File name="kernelheap.c" path="../../../../../home/pancho/git/ecg/coos/kernel/kernelheap.c" type="1"/>
+      <File name="mbox.c" path="../../../../../home/pancho/git/ecg/coos/kernel/mbox.c" type="1"/>
+      <File name="mm.c" path="../../../../../home/pancho/git/ecg/coos/kernel/mm.c" type="1"/>
+      <File name="mutex.c" path="../../../../../home/pancho/git/ecg/coos/kernel/mutex.c" type="1"/>
+      <File name="osconfig.h" path="../../../../../home/pancho/git/ecg/coos/kernel/osconfig.h" type="1"/>
+      <File name="oscore.h" path="../../../../../home/pancho/git/ecg/coos/kernel/oscore.h" type="1"/>
+      <File name="oserror.h" path="../../../../../home/pancho/git/ecg/coos/kernel/oserror.h" type="1"/>
+      <File name="osevent.h" path="../../../../../home/pancho/git/ecg/coos/kernel/osevent.h" type="1"/>
+      <File name="osflag.h" path="../../../../../home/pancho/git/ecg/coos/kernel/osflag.h" type="1"/>
+      <File name="oskernelheap.h" path="../../../../../home/pancho/git/ecg/coos/kernel/oskernelheap.h" type="1"/>
+      <File name="osmm.h" path="../../../../../home/pancho/git/ecg/coos/kernel/osmm.h" type="1"/>
+      <File name="osmutex.h" path="../../../../../home/pancho/git/ecg/coos/kernel/osmutex.h" type="1"/>
+      <File name="osqueue.h" path="../../../../../home/pancho/git/ecg/coos/kernel/osqueue.h" type="1"/>
+      <File name="osservicereq.h" path="../../../../../home/pancho/git/ecg/coos/kernel/osservicereq.h" type="1"/>
+      <File name="ostask.h" path="../../../../../home/pancho/git/ecg/coos/kernel/ostask.h" type="1"/>
+      <File name="ostime.h" path="../../../../../home/pancho/git/ecg/coos/kernel/ostime.h" type="1"/>
+      <File name="ostimer.h" path="../../../../../home/pancho/git/ecg/coos/kernel/ostimer.h" type="1"/>
+      <File name="queue.c" path="../../../../../home/pancho/git/ecg/coos/kernel/queue.c" type="1"/>
+      <File name="sem.c" path="../../../../../home/pancho/git/ecg/coos/kernel/sem.c" type="1"/>
+      <File name="servicereq.c" path="../../../../../home/pancho/git/ecg/coos/kernel/servicereq.c" type="1"/>
+      <File name="task.c" path="../../../../../home/pancho/git/ecg/coos/kernel/task.c" type="1"/>
+      <File name="time.c" path="../../../../../home/pancho/git/ecg/coos/kernel/time.c" type="1"/>
+      <File name="timer.c" path="../../../../../home/pancho/git/ecg/coos/kernel/timer.c" type="1"/>
+      <File name="utility.c" path="../../../../../home/pancho/git/ecg/coos/kernel/utility.c" type="1"/>
+      <File name="utility.h" path="../../../../../home/pancho/git/ecg/coos/kernel/utility.h" type="1"/>
+      <File name="arch.c" path="../../../../../home/pancho/git/ecg/coos/portable/arch.c" type="1"/>
+      <File name="port.c" path="../../../../../home/pancho/git/ecg/coos/portable/gcc/port.c" type="1"/>
+      <File name="osarch.h" path="../../../../../home/pancho/git/ecg/coos/portable/osarch.h" type="1"/>
+      <File name="utils.c" path="../../../../../home/pancho/git/ecg/src/utils.c" type="1"/>
+      <File name="utils.h" path="../../../../../home/pancho/git/ecg/inc/utils.h" type="1"/>
+      <File name="bluetooth.cpp" path="../../../../../home/pancho/git/ecg/serialemulation[pc]/src/bluetooth.cpp" type="1"/>
+      <File name="bluetooth.h" path="../../../../../home/pancho/git/ecg/serialemulation[pc]/src/bluetooth.h" type="1"/>
+      <File name="main.cpp" path="../../../../../home/pancho/git/ecg/serialemulation[pc]/src/main.cpp" type="1"/>
+      <File name="serialreader.cpp" path="../../../../../home/pancho/git/ecg/serialemulation[pc]/src/serialreader.cpp" type="1"/>
+      <File name="serialreader.h" path="../../../../../home/pancho/git/ecg/serialemulation[pc]/src/serialreader.h" type="1"/>
+      <File name="main.cpp" path="../../../../../home/pancho/git/ecg/serialreceiver/src/main.cpp" type="1"/>
+      <File name="mainwindow.cpp" path="../../../../../home/pancho/git/ecg/serialreceiver/src/mainwindow.cpp" type="1"/>
+      <File name="mainwindow.h" path="../../../../../home/pancho/git/ecg/serialreceiver/src/mainwindow.h" type="1"/>
+      <File name=".qcustomplot.cpp" path="../../../../../home/pancho/git/ecg/serialreceiver/src/qcustomplot/.qcustomplot.cpp" type="1"/>
+      <File name="qcustomplot.cpp" path="../../../../../home/pancho/git/ecg/serialreceiver/src/qcustomplot/qcustomplot.cpp" type="1"/>
+      <File name="qcustomplot.h" path="../../../../../home/pancho/git/ecg/serialreceiver/src/qcustomplot/qcustomplot.h" type="1"/>
+      <File name="serialreader.cpp" path="../../../../../home/pancho/git/ecg/serialreceiver/src/serialreader.cpp" type="1"/>
+      <File name="serialreader.h" path="../../../../../home/pancho/git/ecg/serialreceiver/src/serialreader.h" type="1"/>
+      <File name="core_cm3.c" path="../../../../../home/pancho/git/ecg/old/cmsis/core_cm3.c" type="1"/>
+      <File name="core_cm3.h" path="../../../../../home/pancho/git/ecg/old/cmsis/core_cm3.h" type="1"/>
+      <File name="startup_stm32f10x_cl.c" path="../../../../../home/pancho/git/ecg/old/cmsis_boot/startup/startup_stm32f10x_cl.c" type="1"/>
+      <File name="stm32f10x.h" path="../../../../../home/pancho/git/ecg/old/cmsis_boot/stm32f10x.h" type="1"/>
+      <File name="stm32f10x_conf.h" path="../../../../../home/pancho/git/ecg/old/cmsis_boot/stm32f10x_conf.h" type="1"/>
+      <File name="system_stm32f10x.c" path="../../../../../home/pancho/git/ecg/old/cmsis_boot/system_stm32f10x.c" type="1"/>
+      <File name="system_stm32f10x.h" path="../../../../../home/pancho/git/ecg/old/cmsis_boot/system_stm32f10x.h" type="1"/>
+      <File name="coocox.h" path="../../../../../home/pancho/git/ecg/old/coos/kernel/coocox.h" type="1"/>
+      <File name="coos.h" path="../../../../../home/pancho/git/ecg/old/coos/kernel/coos.h" type="1"/>
+      <File name="core.c" path="../../../../../home/pancho/git/ecg/old/coos/kernel/core.c" type="1"/>
+      <File name="event.c" path="../../../../../home/pancho/git/ecg/old/coos/kernel/event.c" type="1"/>
+      <File name="flag.c" path="../../../../../home/pancho/git/ecg/old/coos/kernel/flag.c" type="1"/>
+      <File name="hook.c" path="../../../../../home/pancho/git/ecg/old/coos/kernel/hook.c" type="1"/>
+      <File name="kernelheap.c" path="../../../../../home/pancho/git/ecg/old/coos/kernel/kernelheap.c" type="1"/>
+      <File name="mbox.c" path="../../../../../home/pancho/git/ecg/old/coos/kernel/mbox.c" type="1"/>
+      <File name="mm.c" path="../../../../../home/pancho/git/ecg/old/coos/kernel/mm.c" type="1"/>
+      <File name="mutex.c" path="../../../../../home/pancho/git/ecg/old/coos/kernel/mutex.c" type="1"/>
+      <File name="osconfig.h" path="../../../../../home/pancho/git/ecg/old/coos/kernel/osconfig.h" type="1"/>
+      <File name="oscore.h" path="../../../../../home/pancho/git/ecg/old/coos/kernel/oscore.h" type="1"/>
+      <File name="oserror.h" path="../../../../../home/pancho/git/ecg/old/coos/kernel/oserror.h" type="1"/>
+      <File name="osevent.h" path="../../../../../home/pancho/git/ecg/old/coos/kernel/osevent.h" type="1"/>
+      <File name="osflag.h" path="../../../../../home/pancho/git/ecg/old/coos/kernel/osflag.h" type="1"/>
+      <File name="oskernelheap.h" path="../../../../../home/pancho/git/ecg/old/coos/kernel/oskernelheap.h" type="1"/>
+      <File name="osmm.h" path="../../../../../home/pancho/git/ecg/old/coos/kernel/osmm.h" type="1"/>
+      <File name="osmutex.h" path="../../../../../home/pancho/git/ecg/old/coos/kernel/osmutex.h" type="1"/>
+      <File name="osqueue.h" path="../../../../../home/pancho/git/ecg/old/coos/kernel/osqueue.h" type="1"/>
+      <File name="osservicereq.h" path="../../../../../home/pancho/git/ecg/old/coos/kernel/osservicereq.h" type="1"/>
+      <File name="ostask.h" path="../../../../../home/pancho/git/ecg/old/coos/kernel/ostask.h" type="1"/>
+      <File name="ostime.h" path="../../../../../home/pancho/git/ecg/old/coos/kernel/ostime.h" type="1"/>
+      <File name="ostimer.h" path="../../../../../home/pancho/git/ecg/old/coos/kernel/ostimer.h" type="1"/>
+      <File name="queue.c" path="../../../../../home/pancho/git/ecg/old/coos/kernel/queue.c" type="1"/>
+      <File name="sem.c" path="../../../../../home/pancho/git/ecg/old/coos/kernel/sem.c" type="1"/>
+      <File name="servicereq.c" path="../../../../../home/pancho/git/ecg/old/coos/kernel/servicereq.c" type="1"/>
+      <File name="task.c" path="../../../../../home/pancho/git/ecg/old/coos/kernel/task.c" type="1"/>
+      <File name="time.c" path="../../../../../home/pancho/git/ecg/old/coos/kernel/time.c" type="1"/>
+      <File name="timer.c" path="../../../../../home/pancho/git/ecg/old/coos/kernel/timer.c" type="1"/>
+      <File name="utility.c" path="../../../../../home/pancho/git/ecg/old/coos/kernel/utility.c" type="1"/>
+      <File name="utility.h" path="../../../../../home/pancho/git/ecg/old/coos/kernel/utility.h" type="1"/>
+      <File name="arch.c" path="../../../../../home/pancho/git/ecg/old/coos/portable/arch.c" type="1"/>
+      <File name="port.c" path="../../../../../home/pancho/git/ecg/old/coos/portable/gcc/port.c" type="1"/>
+      <File name="osarch.h" path="../../../../../home/pancho/git/ecg/old/coos/portable/osarch.h" type="1"/>
+      <File name="ecg_board.h" path="../../../../../home/pancho/git/ecg/old/ecg_board.h" type="1"/>
+      <File name="diskio.c" path="../../../../../home/pancho/git/ecg/old/fat/src/diskio.c" type="1"/>
+      <File name="diskio.h" path="../../../../../home/pancho/git/ecg/old/fat/src/diskio.h" type="1"/>
+      <File name="fattime.c" path="../../../../../home/pancho/git/ecg/old/fat/src/fattime.c" type="1"/>
+      <File name="fattime.h" path="../../../../../home/pancho/git/ecg/old/fat/src/fattime.h" type="1"/>
+      <File name="ff.c" path="../../../../../home/pancho/git/ecg/old/fat/src/ff.c" type="1"/>
+      <File name="ff.h" path="../../../../../home/pancho/git/ecg/old/fat/src/ff.h" type="1"/>
+      <File name="ffconf.h" path="../../../../../home/pancho/git/ecg/old/fat/src/ffconf.h" type="1"/>
+      <File name="integer.h" path="../../../../../home/pancho/git/ecg/old/fat/src/integer.h" type="1"/>
+      <File name="rtc.c" path="../../../../../home/pancho/git/ecg/old/fat/src/rtc.c" type="1"/>
+      <File name="rtc.h" path="../../../../../home/pancho/git/ecg/old/fat/src/rtc.h" type="1"/>
+      <File name="bluetooth.h" path="../../../../../home/pancho/git/ecg/old/inc/bluetooth.h" type="1"/>
+      <File name="ecg.h" path="../../../../../home/pancho/git/ecg/old/inc/ecg.h" type="1"/>
+      <File name="filter.h" path="../../../../../home/pancho/git/ecg/old/inc/filter.h" type="1"/>
+      <File name="frontend.h" path="../../../../../home/pancho/git/ecg/old/inc/frontend.h" type="1"/>
+      <File name="spi_flash.h" path="../../../../../home/pancho/git/ecg/old/inc/spi_flash.h" type="1"/>
+      <File name="stm32_dsp.h" path="../../../../../home/pancho/git/ecg/old/inc/stm32_dsp.h" type="1"/>
+      <File name="stm32_eval_spi_flash.h" path="../../../../../home/pancho/git/ecg/old/inc/stm32_eval_spi_flash.h" type="1"/>
+      <File name="stm32_eval_spi_sd.h" path="../../../../../home/pancho/git/ecg/old/inc/stm32_eval_spi_sd.h" type="1"/>
+      <File name="table_fft.h" path="../../../../../home/pancho/git/ecg/old/inc/table_fft.h" type="1"/>
+      <File name="timersystem.h" path="../../../../../home/pancho/git/ecg/old/inc/timersystem.h" type="1"/>
+      <File name="utils.h" path="../../../../../home/pancho/git/ecg/old/inc/utils.h" type="1"/>
+      <File name="main.c" path="../../../../../home/pancho/git/ecg/old/main.c" type="1"/>
+      <File name="semihosting.c" path="../../../../../home/pancho/git/ecg/old/semihosting/semihosting.c" type="1"/>
+      <File name="semihosting.h" path="../../../../../home/pancho/git/ecg/old/semihosting/semihosting.h" type="1"/>
+      <File name="sh_cmd.s" path="../../../../../home/pancho/git/ecg/old/semihosting/sh_cmd.s" type="1"/>
+      <File name="bluetooth.cpp" path="../../../../../home/pancho/git/ecg/old/serialemulation[pc]/src/bluetooth.cpp" type="1"/>
+      <File name="bluetooth.h" path="../../../../../home/pancho/git/ecg/old/serialemulation[pc]/src/bluetooth.h" type="1"/>
+      <File name="main.cpp" path="../../../../../home/pancho/git/ecg/old/serialemulation[pc]/src/main.cpp" type="1"/>
+      <File name="serialreader.cpp" path="../../../../../home/pancho/git/ecg/old/serialemulation[pc]/src/serialreader.cpp" type="1"/>
+      <File name="serialreader.h" path="../../../../../home/pancho/git/ecg/old/serialemulation[pc]/src/serialreader.h" type="1"/>
+      <File name="main.cpp" path="../../../../../home/pancho/git/ecg/old/serialreceiver/src/main.cpp" type="1"/>
+      <File name="mainwindow.cpp" path="../../../../../home/pancho/git/ecg/old/serialreceiver/src/mainwindow.cpp" type="1"/>
+      <File name="mainwindow.h" path="../../../../../home/pancho/git/ecg/old/serialreceiver/src/mainwindow.h" type="1"/>
+      <File name=".qcustomplot.cpp" path="../../../../../home/pancho/git/ecg/old/serialreceiver/src/qcustomplot/.qcustomplot.cpp" type="1"/>
+      <File name="qcustomplot.cpp" path="../../../../../home/pancho/git/ecg/old/serialreceiver/src/qcustomplot/qcustomplot.cpp" type="1"/>
+      <File name="qcustomplot.h" path="../../../../../home/pancho/git/ecg/old/serialreceiver/src/qcustomplot/qcustomplot.h" type="1"/>
+      <File name="serialreader.cpp" path="../../../../../home/pancho/git/ecg/old/serialreceiver/src/serialreader.cpp" type="1"/>
+      <File name="serialreader.h" path="../../../../../home/pancho/git/ecg/old/serialreceiver/src/serialreader.h" type="1"/>
+      <File name="cr4_fft_1024_stm32.s" path="../../../../../home/pancho/git/ecg/old/src/asm/gcc/cr4_fft_1024_stm32.s" type="1"/>
+      <File name="cr4_fft_256_stm32.s" path="../../../../../home/pancho/git/ecg/old/src/asm/gcc/cr4_fft_256_stm32.s" type="1"/>
+      <File name="cr4_fft_64_stm32.s" path="../../../../../home/pancho/git/ecg/old/src/asm/gcc/cr4_fft_64_stm32.s" type="1"/>
+      <File name="fir_stm32.s" path="../../../../../home/pancho/git/ecg/old/src/asm/gcc/fir_stm32.s" type="1"/>
+      <File name="iirarma_stm32.s" path="../../../../../home/pancho/git/ecg/old/src/asm/gcc/iirarma_stm32.s" type="1"/>
+      <File name="pid_stm32.s" path="../../../../../home/pancho/git/ecg/old/src/asm/gcc/pid_stm32.s" type="1"/>
+      <File name="bluetooth.c" path="../../../../../home/pancho/git/ecg/old/src/bluetooth.c" type="1"/>
+      <File name="filter.c" path="../../../../../home/pancho/git/ecg/old/src/filter.c" type="1"/>
+      <File name="frontend.c" path="../../../../../home/pancho/git/ecg/old/src/frontend.c" type="1"/>
+      <File name="iir_stm32.c" path="../../../../../home/pancho/git/ecg/old/src/iir_stm32.c" type="1"/>
+      <File name="pid_c_stm32.c" path="../../../../../home/pancho/git/ecg/old/src/pid_c_stm32.c" type="1"/>
+      <File name="sd_card.c" path="../../../../../home/pancho/git/ecg/old/src/sd_card.c" type="1"/>
+      <File name="spi_flash.c" path="../../../../../home/pancho/git/ecg/old/src/spi_flash.c" type="1"/>
+      <File name="stm32_eval_spi_flash.c" path="../../../../../home/pancho/git/ecg/old/src/stm32_eval_spi_flash.c" type="1"/>
+      <File name="utils.c" path="../../../../../home/pancho/git/ecg/old/src/utils.c" type="1"/>
+      <File name="printf.c" path="../../../../../home/pancho/git/ecg/old/stdio/printf.c" type="1"/>
+      <File name="otgd_fs_cal.h" path="../../../../../home/pancho/git/ecg/old/stm32_usb-fs-device_driver/inc/otgd_fs_cal.h" type="1"/>
+      <File name="otgd_fs_dev.h" path="../../../../../home/pancho/git/ecg/old/stm32_usb-fs-device_driver/inc/otgd_fs_dev.h" type="1"/>
+      <File name="otgd_fs_int.h" path="../../../../../home/pancho/git/ecg/old/stm32_usb-fs-device_driver/inc/otgd_fs_int.h" type="1"/>
+      <File name="otgd_fs_pcd.h" path="../../../../../home/pancho/git/ecg/old/stm32_usb-fs-device_driver/inc/otgd_fs_pcd.h" type="1"/>
+      <File name="otgd_fs_regs.h" path="../../../../../home/pancho/git/ecg/old/stm32_usb-fs-device_driver/inc/otgd_fs_regs.h" type="1"/>
+      <File name="usb_core.h" path="../../../../../home/pancho/git/ecg/old/stm32_usb-fs-device_driver/inc/usb_core.h" type="1"/>
+      <File name="usb_def.h" path="../../../../../home/pancho/git/ecg/old/stm32_usb-fs-device_driver/inc/usb_def.h" type="1"/>
+      <File name="usb_init.h" path="../../../../../home/pancho/git/ecg/old/stm32_usb-fs-device_driver/inc/usb_init.h" type="1"/>
+      <File name="usb_int.h" path="../../../../../home/pancho/git/ecg/old/stm32_usb-fs-device_driver/inc/usb_int.h" type="1"/>
+      <File name="usb_lib.h" path="../../../../../home/pancho/git/ecg/old/stm32_usb-fs-device_driver/inc/usb_lib.h" type="1"/>
+      <File name="usb_mem.h" path="../../../../../home/pancho/git/ecg/old/stm32_usb-fs-device_driver/inc/usb_mem.h" type="1"/>
+      <File name="usb_regs.h" path="../../../../../home/pancho/git/ecg/old/stm32_usb-fs-device_driver/inc/usb_regs.h" type="1"/>
+      <File name="usb_sil.h" path="../../../../../home/pancho/git/ecg/old/stm32_usb-fs-device_driver/inc/usb_sil.h" type="1"/>
+      <File name="usb_type.h" path="../../../../../home/pancho/git/ecg/old/stm32_usb-fs-device_driver/inc/usb_type.h" type="1"/>
+      <File name="otgd_fs_cal.c" path="../../../../../home/pancho/git/ecg/old/stm32_usb-fs-device_driver/src/otgd_fs_cal.c" type="1"/>
+      <File name="otgd_fs_dev.c" path="../../../../../home/pancho/git/ecg/old/stm32_usb-fs-device_driver/src/otgd_fs_dev.c" type="1"/>
+      <File name="otgd_fs_int.c" path="../../../../../home/pancho/git/ecg/old/stm32_usb-fs-device_driver/src/otgd_fs_int.c" type="1"/>
+      <File name="otgd_fs_pcd.c" path="../../../../../home/pancho/git/ecg/old/stm32_usb-fs-device_driver/src/otgd_fs_pcd.c" type="1"/>
+      <File name="usb_core.c" path="../../../../../home/pancho/git/ecg/old/stm32_usb-fs-device_driver/src/usb_core.c" type="1"/>
+      <File name="usb_init.c" path="../../../../../home/pancho/git/ecg/old/stm32_usb-fs-device_driver/src/usb_init.c" type="1"/>
+      <File name="usb_int.c" path="../../../../../home/pancho/git/ecg/old/stm32_usb-fs-device_driver/src/usb_int.c" type="1"/>
+      <File name="usb_mem.c" path="../../../../../home/pancho/git/ecg/old/stm32_usb-fs-device_driver/src/usb_mem.c" type="1"/>
+      <File name="usb_regs.c" path="../../../../../home/pancho/git/ecg/old/stm32_usb-fs-device_driver/src/usb_regs.c" type="1"/>
+      <File name="usb_sil.c" path="../../../../../home/pancho/git/ecg/old/stm32_usb-fs-device_driver/src/usb_sil.c" type="1"/>
+      <File name="misc.h" path="../../../../../home/pancho/git/ecg/old/stm_lib/inc/misc.h" type="1"/>
+      <File name="stm32f10x_adc.h" path="../../../../../home/pancho/git/ecg/old/stm_lib/inc/stm32f10x_adc.h" type="1"/>
+      <File name="stm32f10x_bkp.h" path="../../../../../home/pancho/git/ecg/old/stm_lib/inc/stm32f10x_bkp.h" type="1"/>
+      <File name="stm32f10x_dac.h" path="../../../../../home/pancho/git/ecg/old/stm_lib/inc/stm32f10x_dac.h" type="1"/>
+      <File name="stm32f10x_exti.h" path="../../../../../home/pancho/git/ecg/old/stm_lib/inc/stm32f10x_exti.h" type="1"/>
+      <File name="stm32f10x_flash.h" path="../../../../../home/pancho/git/ecg/old/stm_lib/inc/stm32f10x_flash.h" type="1"/>
+      <File name="stm32f10x_gpio.h" path="../../../../../home/pancho/git/ecg/old/stm_lib/inc/stm32f10x_gpio.h" type="1"/>
+      <File name="stm32f10x_pwr.h" path="../../../../../home/pancho/git/ecg/old/stm_lib/inc/stm32f10x_pwr.h" type="1"/>
+      <File name="stm32f10x_rcc.h" path="../../../../../home/pancho/git/ecg/old/stm_lib/inc/stm32f10x_rcc.h" type="1"/>
+      <File name="stm32f10x_rtc.h" path="../../../../../home/pancho/git/ecg/old/stm_lib/inc/stm32f10x_rtc.h" type="1"/>
+      <File name="stm32f10x_spi.h" path="../../../../../home/pancho/git/ecg/old/stm_lib/inc/stm32f10x_spi.h" type="1"/>
+      <File name="stm32f10x_usart.h" path="../../../../../home/pancho/git/ecg/old/stm_lib/inc/stm32f10x_usart.h" type="1"/>
+      <File name="misc.c" path="../../../../../home/pancho/git/ecg/old/stm_lib/src/misc.c" type="1"/>
+      <File name="stm32f10x_adc.c" path="../../../../../home/pancho/git/ecg/old/stm_lib/src/stm32f10x_adc.c" type="1"/>
+      <File name="stm32f10x_bkp.c" path="../../../../../home/pancho/git/ecg/old/stm_lib/src/stm32f10x_bkp.c" type="1"/>
+      <File name="stm32f10x_dac.c" path="../../../../../home/pancho/git/ecg/old/stm_lib/src/stm32f10x_dac.c" type="1"/>
+      <File name="stm32f10x_exti.c" path="../../../../../home/pancho/git/ecg/old/stm_lib/src/stm32f10x_exti.c" type="1"/>
+      <File name="stm32f10x_flash.c" path="../../../../../home/pancho/git/ecg/old/stm_lib/src/stm32f10x_flash.c" type="1"/>
+      <File name="stm32f10x_gpio.c" path="../../../../../home/pancho/git/ecg/old/stm_lib/src/stm32f10x_gpio.c" type="1"/>
+      <File name="stm32f10x_pwr.c" path="../../../../../home/pancho/git/ecg/old/stm_lib/src/stm32f10x_pwr.c" type="1"/>
+      <File name="stm32f10x_rcc.c" path="../../../../../home/pancho/git/ecg/old/stm_lib/src/stm32f10x_rcc.c" type="1"/>
+      <File name="stm32f10x_rtc.c" path="../../../../../home/pancho/git/ecg/old/stm_lib/src/stm32f10x_rtc.c" type="1"/>
+      <File name="stm32f10x_spi.c" path="../../../../../home/pancho/git/ecg/old/stm_lib/src/stm32f10x_spi.c" type="1"/>
+      <File name="stm32f10x_usart.c" path="../../../../../home/pancho/git/ecg/old/stm_lib/src/stm32f10x_usart.c" type="1"/>
+      <File name="syscalls.c" path="../../../../../home/pancho/git/ecg/old/syscalls/syscalls.c" type="1"/>
+      <File name="task2_storage.c" path="../../../../../home/pancho/git/ecg/old/task2_storage.c" type="1"/>
+      <File name="task3_bluetooth.c" path="../../../../../home/pancho/git/ecg/old/task3_bluetooth.c" type="1"/>
+      <File name="task4_leds.c" path="../../../../../home/pancho/git/ecg/old/task4_leds.c" type="1"/>
+      <File name="task5_usb.c" path="../../../../../home/pancho/git/ecg/old/task5_usb.c" type="1"/>
+      <File name="task6_battery.c" path="../../../../../home/pancho/git/ecg/old/task6_battery.c" type="1"/>
+      <File name="fsmc_nand.h" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/inc/fsmc_nand.h" type="1"/>
+      <File name="hw_config.h" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/inc/hw_config.h" type="1"/>
+      <File name="mass_mal.h" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/inc/mass_mal.h" type="1"/>
+      <File name="memory.h" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/inc/memory.h" type="1"/>
+      <File name="nand_if.h" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/inc/nand_if.h" type="1"/>
+      <File name="platform_config.h" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/inc/platform_config.h" type="1"/>
+      <File name="stm32f10x_conf.h" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/inc/stm32f10x_conf.h" type="1"/>
+      <File name="stm32f10x_it.h" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/inc/stm32f10x_it.h" type="1"/>
+      <File name="stm32l1xx_conf.h" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/inc/stm32l1xx_conf.h" type="1"/>
+      <File name="stm32l1xx_it.h" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/inc/stm32l1xx_it.h" type="1"/>
+      <File name="stm32_eval_sdio_sd.h" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/inc/stm32_eval_sdio_sd.h" type="1"/>
+      <File name="usb_bot.h" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/inc/usb_bot.h" type="1"/>
+      <File name="usb_conf.h" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/inc/usb_conf.h" type="1"/>
+      <File name="usb_desc.h" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/inc/usb_desc.h" type="1"/>
+      <File name="usb_istr.h" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/inc/usb_istr.h" type="1"/>
+      <File name="usb_prop.h" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/inc/usb_prop.h" type="1"/>
+      <File name="usb_pwr.h" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/inc/usb_pwr.h" type="1"/>
+      <File name="usb_scsi.h" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/inc/usb_scsi.h" type="1"/>
+      <File name="hw_config.c" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/src/hw_config.c" type="1"/>
+      <File name="mass_mal.c" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/src/mass_mal.c" type="1"/>
+      <File name="memory.c" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/src/memory.c" type="1"/>
+      <File name="nand_if.c" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/src/nand_if.c" type="1"/>
+      <File name="scsi_data.c" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/src/scsi_data.c" type="1"/>
+      <File name="stm32f10x_it.c" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/src/stm32f10x_it.c" type="1"/>
+      <File name="usb_bot.c" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/src/usb_bot.c" type="1"/>
+      <File name="usb_desc.c" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/src/usb_desc.c" type="1"/>
+      <File name="usb_endp.c" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/src/usb_endp.c" type="1"/>
+      <File name="usb_istr.c" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/src/usb_istr.c" type="1"/>
+      <File name="usb_prop.c" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/src/usb_prop.c" type="1"/>
+      <File name="usb_pwr.c" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/src/usb_pwr.c" type="1"/>
+      <File name="usb_scsi.c" path="../../../../../home/pancho/git/ecg/old/usb_mass_storage/src/usb_scsi.c" type="1"/>
+      <File name="bluetooth.cpp" path="../../../../../home/pancho/git/ecg/pc/serialemulation[pc]/src/bluetooth.cpp" type="1"/>
+      <File name="bluetooth.h" path="../../../../../home/pancho/git/ecg/pc/serialemulation[pc]/src/bluetooth.h" type="1"/>
+      <File name="main.cpp" path="../../../../../home/pancho/git/ecg/pc/serialemulation[pc]/src/main.cpp" type="1"/>
+      <File name="serialreader.cpp" path="../../../../../home/pancho/git/ecg/pc/serialemulation[pc]/src/serialreader.cpp" type="1"/>
+      <File name="serialreader.h" path="../../../../../home/pancho/git/ecg/pc/serialemulation[pc]/src/serialreader.h" type="1"/>
+      <File name="main.cpp" path="../../../../../home/pancho/git/ecg/pc/serialreceiver/src/main.cpp" type="1"/>
+      <File name="mainwindow.cpp" path="../../../../../home/pancho/git/ecg/pc/serialreceiver/src/mainwindow.cpp" type="1"/>
+      <File name="mainwindow.h" path="../../../../../home/pancho/git/ecg/pc/serialreceiver/src/mainwindow.h" type="1"/>
+      <File name=".qcustomplot.cpp" path="../../../../../home/pancho/git/ecg/pc/serialreceiver/src/qcustomplot/.qcustomplot.cpp" type="1"/>
+      <File name="qcustomplot.cpp" path="../../../../../home/pancho/git/ecg/pc/serialreceiver/src/qcustomplot/qcustomplot.cpp" type="1"/>
+      <File name="qcustomplot.h" path="../../../../../home/pancho/git/ecg/pc/serialreceiver/src/qcustomplot/qcustomplot.h" type="1"/>
+      <File name="serialreader.cpp" path="../../../../../home/pancho/git/ecg/pc/serialreceiver/src/serialreader.cpp" type="1"/>
+      <File name="serialreader.h" path="../../../../../home/pancho/git/ecg/pc/serialreceiver/src/serialreader.h" type="1"/>
+      <File name="usb.c" path="../../../../../home/pancho/git/ecg/src/usb.c" type="1"/>
+      <File name="otgd_fs_cal.h" path="../../../../../home/pancho/git/ecg/stm32_usb-fs-device_driver/inc/otgd_fs_cal.h" type="1"/>
+      <File name="otgd_fs_dev.h" path="../../../../../home/pancho/git/ecg/stm32_usb-fs-device_driver/inc/otgd_fs_dev.h" type="1"/>
+      <File name="otgd_fs_int.h" path="../../../../../home/pancho/git/ecg/stm32_usb-fs-device_driver/inc/otgd_fs_int.h" type="1"/>
+      <File name="otgd_fs_pcd.h" path="../../../../../home/pancho/git/ecg/stm32_usb-fs-device_driver/inc/otgd_fs_pcd.h" type="1"/>
+      <File name="otgd_fs_regs.h" path="../../../../../home/pancho/git/ecg/stm32_usb-fs-device_driver/inc/otgd_fs_regs.h" type="1"/>
+      <File name="usb_core.h" path="../../../../../home/pancho/git/ecg/stm32_usb-fs-device_driver/inc/usb_core.h" type="1"/>
+      <File name="usb_def.h" path="../../../../../home/pancho/git/ecg/stm32_usb-fs-device_driver/inc/usb_def.h" type="1"/>
+      <File name="usb_init.h" path="../../../../../home/pancho/git/ecg/stm32_usb-fs-device_driver/inc/usb_init.h" type="1"/>
+      <File name="usb_int.h" path="../../../../../home/pancho/git/ecg/stm32_usb-fs-device_driver/inc/usb_int.h" type="1"/>
+      <File name="usb_lib.h" path="../../../../../home/pancho/git/ecg/stm32_usb-fs-device_driver/inc/usb_lib.h" type="1"/>
+      <File name="usb_mem.h" path="../../../../../home/pancho/git/ecg/stm32_usb-fs-device_driver/inc/usb_mem.h" type="1"/>
+      <File name="usb_regs.h" path="../../../../../home/pancho/git/ecg/stm32_usb-fs-device_driver/inc/usb_regs.h" type="1"/>
+      <File name="usb_sil.h" path="../../../../../home/pancho/git/ecg/stm32_usb-fs-device_driver/inc/usb_sil.h" type="1"/>
+      <File name="usb_type.h" path="../../../../../home/pancho/git/ecg/stm32_usb-fs-device_driver/inc/usb_type.h" type="1"/>
+      <File name="otgd_fs_cal.c" path="../../../../../home/pancho/git/ecg/stm32_usb-fs-device_driver/src/otgd_fs_cal.c" type="1"/>
+      <File name="otgd_fs_dev.c" path="../../../../../home/pancho/git/ecg/stm32_usb-fs-device_driver/src/otgd_fs_dev.c" type="1"/>
+      <File name="otgd_fs_int.c" path="../../../../../home/pancho/git/ecg/stm32_usb-fs-device_driver/src/otgd_fs_int.c" type="1"/>
+      <File name="otgd_fs_pcd.c" path="../../../../../home/pancho/git/ecg/stm32_usb-fs-device_driver/src/otgd_fs_pcd.c" type="1"/>
+      <File name="usb_core.c" path="../../../../../home/pancho/git/ecg/stm32_usb-fs-device_driver/src/usb_core.c" type="1"/>
+      <File name="usb_init.c" path="../../../../../home/pancho/git/ecg/stm32_usb-fs-device_driver/src/usb_init.c" type="1"/>
+      <File name="usb_int.c" path="../../../../../home/pancho/git/ecg/stm32_usb-fs-device_driver/src/usb_int.c" type="1"/>
+      <File name="usb_mem.c" path="../../../../../home/pancho/git/ecg/stm32_usb-fs-device_driver/src/usb_mem.c" type="1"/>
+      <File name="usb_regs.c" path="../../../../../home/pancho/git/ecg/stm32_usb-fs-device_driver/src/usb_regs.c" type="1"/>
+      <File name="usb_sil.c" path="../../../../../home/pancho/git/ecg/stm32_usb-fs-device_driver/src/usb_sil.c" type="1"/>
+      <File name="usb.h" path="../../../../../home/pancho/git/ecg/inc/usb.h" type="1"/>
+      <File name="fsmc_nand.h" path="../../../../../home/pancho/git/ecg/usb_mass_storage/inc/fsmc_nand.h" type="1"/>
+      <File name="hw_config.h" path="../../../../../home/pancho/git/ecg/usb_mass_storage/inc/hw_config.h" type="1"/>
+      <File name="mass_mal.h" path="../../../../../home/pancho/git/ecg/usb_mass_storage/inc/mass_mal.h" type="1"/>
+      <File name="memory.h" path="../../../../../home/pancho/git/ecg/usb_mass_storage/inc/memory.h" type="1"/>
+      <File name="nand_if.h" path="../../../../../home/pancho/git/ecg/usb_mass_storage/inc/nand_if.h" type="1"/>
+      <File name="platform_config.h" path="../../../../../home/pancho/git/ecg/usb_mass_storage/inc/platform_config.h" type="1"/>
+      <File name="stm32f10x_conf.h" path="../../../../../home/pancho/git/ecg/usb_mass_storage/inc/stm32f10x_conf.h" type="1"/>
+      <File name="stm32f10x_it.h" path="../../../../../home/pancho/git/ecg/usb_mass_storage/inc/stm32f10x_it.h" type="1"/>
+      <File name="stm32l1xx_conf.h" path="../../../../../home/pancho/git/ecg/usb_mass_storage/inc/stm32l1xx_conf.h" type="1"/>
+      <File name="stm32l1xx_it.h" path="../../../../../home/pancho/git/ecg/usb_mass_storage/inc/stm32l1xx_it.h" type="1"/>
+      <File name="stm32_eval_sdio_sd.h" path="../../../../../home/pancho/git/ecg/usb_mass_storage/inc/stm32_eval_sdio_sd.h" type="1"/>
+      <File name="usb_bot.h" path="../../../../../home/pancho/git/ecg/usb_mass_storage/inc/usb_bot.h" type="1"/>
+      <File name="usb_conf.h" path="../../../../../home/pancho/git/ecg/usb_mass_storage/inc/usb_conf.h" type="1"/>
+      <File name="usb_desc.h" path="../../../../../home/pancho/git/ecg/usb_mass_storage/inc/usb_desc.h" type="1"/>
+      <File name="usb_istr.h" path="../../../../../home/pancho/git/ecg/usb_mass_storage/inc/usb_istr.h" type="1"/>
+      <File name="usb_prop.h" path="../../../../../home/pancho/git/ecg/usb_mass_storage/inc/usb_prop.h" type="1"/>
+      <File name="usb_pwr.h" path="../../../../../home/pancho/git/ecg/usb_mass_storage/inc/usb_pwr.h" type="1"/>
+      <File name="usb_scsi.h" path="../../../../../home/pancho/git/ecg/usb_mass_storage/inc/usb_scsi.h" type="1"/>
+      <File name="hw_config.c" path="../../../../../home/pancho/git/ecg/usb_mass_storage/src/hw_config.c" type="1"/>
+      <File name="mass_mal.c" path="../../../../../home/pancho/git/ecg/usb_mass_storage/src/mass_mal.c" type="1"/>
+      <File name="memory.c" path="../../../../../home/pancho/git/ecg/usb_mass_storage/src/memory.c" type="1"/>
+      <File name="nand_if.c" path="../../../../../home/pancho/git/ecg/usb_mass_storage/src/nand_if.c" type="1"/>
+      <File name="scsi_data.c" path="../../../../../home/pancho/git/ecg/usb_mass_storage/src/scsi_data.c" type="1"/>
+      <File name="stm32f10x_it.c" path="../../../../../home/pancho/git/ecg/usb_mass_storage/src/stm32f10x_it.c" type="1"/>
+      <File name="usb_bot.c" path="../../../../../home/pancho/git/ecg/usb_mass_storage/src/usb_bot.c" type="1"/>
+      <File name="usb_desc.c" path="../../../../../home/pancho/git/ecg/usb_mass_storage/src/usb_desc.c" type="1"/>
+      <File name="usb_endp.c" path="../../../../../home/pancho/git/ecg/usb_mass_storage/src/usb_endp.c" type="1"/>
+      <File name="usb_istr.c" path="../../../../../home/pancho/git/ecg/usb_mass_storage/src/usb_istr.c" type="1"/>
+      <File name="usb_prop.c" path="../../../../../home/pancho/git/ecg/usb_mass_storage/src/usb_prop.c" type="1"/>
+      <File name="usb_pwr.c" path="../../../../../home/pancho/git/ecg/usb_mass_storage/src/usb_pwr.c" type="1"/>
+      <File name="usb_scsi.c" path="../../../../../home/pancho/git/ecg/usb_mass_storage/src/usb_scsi.c" type="1"/>
+      <File name="core_cm3.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/cmsis/core_cm3.c" type="1"/>
+      <File name="core_cm3.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/cmsis/core_cm3.h" type="1"/>
+      <File name="startup_stm32f10x_cl.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/cmsis_boot/startup/startup_stm32f10x_cl.c" type="1"/>
+      <File name="stm32f10x.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/cmsis_boot/stm32f10x.h" type="1"/>
+      <File name="stm32f10x_conf.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/cmsis_boot/stm32f10x_conf.h" type="1"/>
+      <File name="system_stm32f10x.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/cmsis_boot/system_stm32f10x.c" type="1"/>
+      <File name="system_stm32f10x.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/cmsis_boot/system_stm32f10x.h" type="1"/>
+      <File name="coocox.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/coocox.h" type="1"/>
+      <File name="coos.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/coos.h" type="1"/>
+      <File name="core.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/core.c" type="1"/>
+      <File name="event.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/event.c" type="1"/>
+      <File name="flag.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/flag.c" type="1"/>
+      <File name="hook.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/hook.c" type="1"/>
+      <File name="kernelheap.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/kernelheap.c" type="1"/>
+      <File name="mbox.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/mbox.c" type="1"/>
+      <File name="mm.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/mm.c" type="1"/>
+      <File name="mutex.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/mutex.c" type="1"/>
+      <File name="osconfig.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/osconfig.h" type="1"/>
+      <File name="oscore.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/oscore.h" type="1"/>
+      <File name="oserror.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/oserror.h" type="1"/>
+      <File name="osevent.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/osevent.h" type="1"/>
+      <File name="osflag.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/osflag.h" type="1"/>
+      <File name="oskernelheap.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/oskernelheap.h" type="1"/>
+      <File name="osmm.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/osmm.h" type="1"/>
+      <File name="osmutex.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/osmutex.h" type="1"/>
+      <File name="osqueue.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/osqueue.h" type="1"/>
+      <File name="osservicereq.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/osservicereq.h" type="1"/>
+      <File name="ostask.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/ostask.h" type="1"/>
+      <File name="ostime.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/ostime.h" type="1"/>
+      <File name="ostimer.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/ostimer.h" type="1"/>
+      <File name="queue.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/queue.c" type="1"/>
+      <File name="sem.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/sem.c" type="1"/>
+      <File name="servicereq.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/servicereq.c" type="1"/>
+      <File name="task.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/task.c" type="1"/>
+      <File name="time.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/time.c" type="1"/>
+      <File name="timer.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/timer.c" type="1"/>
+      <File name="utility.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/utility.c" type="1"/>
+      <File name="utility.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/kernel/utility.h" type="1"/>
+      <File name="arch.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/portable/arch.c" type="1"/>
+      <File name="port.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/portable/gcc/port.c" type="1"/>
+      <File name="osarch.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/coos/portable/osarch.h" type="1"/>
+      <File name="ecg_board.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/ecg_board.h" type="1"/>
+      <File name="diskio.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/fat/src/diskio.c" type="1"/>
+      <File name="diskio.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/fat/src/diskio.h" type="1"/>
+      <File name="fattime.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/fat/src/fattime.c" type="1"/>
+      <File name="fattime.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/fat/src/fattime.h" type="1"/>
+      <File name="ff.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/fat/src/ff.c" type="1"/>
+      <File name="ff.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/fat/src/ff.h" type="1"/>
+      <File name="ffconf.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/fat/src/ffconf.h" type="1"/>
+      <File name="integer.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/fat/src/integer.h" type="1"/>
+      <File name="rtc.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/fat/src/rtc.c" type="1"/>
+      <File name="rtc.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/fat/src/rtc.h" type="1"/>
+      <File name="bluetooth.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/inc/bluetooth.h" type="1"/>
+      <File name="ecg.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/inc/ecg.h" type="1"/>
+      <File name="filter.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/inc/filter.h" type="1"/>
+      <File name="frontend.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/inc/frontend.h" type="1"/>
+      <File name="spi_flash.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/inc/spi_flash.h" type="1"/>
+      <File name="stm32_dsp.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/inc/stm32_dsp.h" type="1"/>
+      <File name="stm32_eval_spi_flash.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/inc/stm32_eval_spi_flash.h" type="1"/>
+      <File name="stm32_eval_spi_sd.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/inc/stm32_eval_spi_sd.h" type="1"/>
+      <File name="table_fft.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/inc/table_fft.h" type="1"/>
+      <File name="timersystem.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/inc/timersystem.h" type="1"/>
+      <File name="utils.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/inc/utils.h" type="1"/>
+      <File name="main.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/main.c" type="1"/>
+      <File name="semihosting.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/semihosting/semihosting.c" type="1"/>
+      <File name="semihosting.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/semihosting/semihosting.h" type="1"/>
+      <File name="sh_cmd.s" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/semihosting/sh_cmd.s" type="1"/>
+      <File name="bluetooth.cpp" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/serialemulation[pc]/src/bluetooth.cpp" type="1"/>
+      <File name="bluetooth.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/serialemulation[pc]/src/bluetooth.h" type="1"/>
+      <File name="main.cpp" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/serialemulation[pc]/src/main.cpp" type="1"/>
+      <File name="serialreader.cpp" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/serialemulation[pc]/src/serialreader.cpp" type="1"/>
+      <File name="serialreader.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/serialemulation[pc]/src/serialreader.h" type="1"/>
+      <File name="main.cpp" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/serialreceiver/src/main.cpp" type="1"/>
+      <File name="mainwindow.cpp" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/serialreceiver/src/mainwindow.cpp" type="1"/>
+      <File name="mainwindow.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/serialreceiver/src/mainwindow.h" type="1"/>
+      <File name=".qcustomplot.cpp" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/serialreceiver/src/qcustomplot/.qcustomplot.cpp" type="1"/>
+      <File name="qcustomplot.cpp" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/serialreceiver/src/qcustomplot/qcustomplot.cpp" type="1"/>
+      <File name="qcustomplot.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/serialreceiver/src/qcustomplot/qcustomplot.h" type="1"/>
+      <File name="serialreader.cpp" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/serialreceiver/src/serialreader.cpp" type="1"/>
+      <File name="serialreader.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/serialreceiver/src/serialreader.h" type="1"/>
+      <File name="cr4_fft_1024_stm32.s" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/src/asm/gcc/cr4_fft_1024_stm32.s" type="1"/>
+      <File name="cr4_fft_256_stm32.s" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/src/asm/gcc/cr4_fft_256_stm32.s" type="1"/>
+      <File name="cr4_fft_64_stm32.s" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/src/asm/gcc/cr4_fft_64_stm32.s" type="1"/>
+      <File name="fir_stm32.s" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/src/asm/gcc/fir_stm32.s" type="1"/>
+      <File name="iirarma_stm32.s" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/src/asm/gcc/iirarma_stm32.s" type="1"/>
+      <File name="pid_stm32.s" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/src/asm/gcc/pid_stm32.s" type="1"/>
+      <File name="bluetooth.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/src/bluetooth.c" type="1"/>
+      <File name="filter.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/src/filter.c" type="1"/>
+      <File name="frontend.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/src/frontend.c" type="1"/>
+      <File name="iir_stm32.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/src/iir_stm32.c" type="1"/>
+      <File name="pid_c_stm32.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/src/pid_c_stm32.c" type="1"/>
+      <File name="sd_card.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/src/sd_card.c" type="1"/>
+      <File name="spi_flash.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/src/spi_flash.c" type="1"/>
+      <File name="stm32_eval_spi_flash.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/src/stm32_eval_spi_flash.c" type="1"/>
+      <File name="utils.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/src/utils.c" type="1"/>
+      <File name="printf.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stdio/printf.c" type="1"/>
+      <File name="otgd_fs_cal.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm32_usb-fs-device_driver/inc/otgd_fs_cal.h" type="1"/>
+      <File name="otgd_fs_dev.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm32_usb-fs-device_driver/inc/otgd_fs_dev.h" type="1"/>
+      <File name="otgd_fs_int.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm32_usb-fs-device_driver/inc/otgd_fs_int.h" type="1"/>
+      <File name="otgd_fs_pcd.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm32_usb-fs-device_driver/inc/otgd_fs_pcd.h" type="1"/>
+      <File name="otgd_fs_regs.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm32_usb-fs-device_driver/inc/otgd_fs_regs.h" type="1"/>
+      <File name="usb_core.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm32_usb-fs-device_driver/inc/usb_core.h" type="1"/>
+      <File name="usb_def.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm32_usb-fs-device_driver/inc/usb_def.h" type="1"/>
+      <File name="usb_init.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm32_usb-fs-device_driver/inc/usb_init.h" type="1"/>
+      <File name="usb_int.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm32_usb-fs-device_driver/inc/usb_int.h" type="1"/>
+      <File name="usb_lib.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm32_usb-fs-device_driver/inc/usb_lib.h" type="1"/>
+      <File name="usb_mem.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm32_usb-fs-device_driver/inc/usb_mem.h" type="1"/>
+      <File name="usb_regs.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm32_usb-fs-device_driver/inc/usb_regs.h" type="1"/>
+      <File name="usb_sil.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm32_usb-fs-device_driver/inc/usb_sil.h" type="1"/>
+      <File name="usb_type.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm32_usb-fs-device_driver/inc/usb_type.h" type="1"/>
+      <File name="otgd_fs_cal.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm32_usb-fs-device_driver/src/otgd_fs_cal.c" type="1"/>
+      <File name="otgd_fs_dev.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm32_usb-fs-device_driver/src/otgd_fs_dev.c" type="1"/>
+      <File name="otgd_fs_int.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm32_usb-fs-device_driver/src/otgd_fs_int.c" type="1"/>
+      <File name="otgd_fs_pcd.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm32_usb-fs-device_driver/src/otgd_fs_pcd.c" type="1"/>
+      <File name="usb_core.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm32_usb-fs-device_driver/src/usb_core.c" type="1"/>
+      <File name="usb_init.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm32_usb-fs-device_driver/src/usb_init.c" type="1"/>
+      <File name="usb_int.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm32_usb-fs-device_driver/src/usb_int.c" type="1"/>
+      <File name="usb_mem.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm32_usb-fs-device_driver/src/usb_mem.c" type="1"/>
+      <File name="usb_regs.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm32_usb-fs-device_driver/src/usb_regs.c" type="1"/>
+      <File name="usb_sil.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm32_usb-fs-device_driver/src/usb_sil.c" type="1"/>
+      <File name="misc.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm_lib/inc/misc.h" type="1"/>
+      <File name="stm32f10x_adc.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm_lib/inc/stm32f10x_adc.h" type="1"/>
+      <File name="stm32f10x_bkp.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm_lib/inc/stm32f10x_bkp.h" type="1"/>
+      <File name="stm32f10x_dac.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm_lib/inc/stm32f10x_dac.h" type="1"/>
+      <File name="stm32f10x_exti.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm_lib/inc/stm32f10x_exti.h" type="1"/>
+      <File name="stm32f10x_flash.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm_lib/inc/stm32f10x_flash.h" type="1"/>
+      <File name="stm32f10x_gpio.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm_lib/inc/stm32f10x_gpio.h" type="1"/>
+      <File name="stm32f10x_pwr.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm_lib/inc/stm32f10x_pwr.h" type="1"/>
+      <File name="stm32f10x_rcc.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm_lib/inc/stm32f10x_rcc.h" type="1"/>
+      <File name="stm32f10x_rtc.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm_lib/inc/stm32f10x_rtc.h" type="1"/>
+      <File name="stm32f10x_spi.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm_lib/inc/stm32f10x_spi.h" type="1"/>
+      <File name="stm32f10x_usart.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm_lib/inc/stm32f10x_usart.h" type="1"/>
+      <File name="misc.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm_lib/src/misc.c" type="1"/>
+      <File name="stm32f10x_adc.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm_lib/src/stm32f10x_adc.c" type="1"/>
+      <File name="stm32f10x_bkp.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm_lib/src/stm32f10x_bkp.c" type="1"/>
+      <File name="stm32f10x_dac.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm_lib/src/stm32f10x_dac.c" type="1"/>
+      <File name="stm32f10x_exti.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm_lib/src/stm32f10x_exti.c" type="1"/>
+      <File name="stm32f10x_flash.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm_lib/src/stm32f10x_flash.c" type="1"/>
+      <File name="stm32f10x_gpio.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm_lib/src/stm32f10x_gpio.c" type="1"/>
+      <File name="stm32f10x_pwr.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm_lib/src/stm32f10x_pwr.c" type="1"/>
+      <File name="stm32f10x_rcc.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm_lib/src/stm32f10x_rcc.c" type="1"/>
+      <File name="stm32f10x_rtc.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm_lib/src/stm32f10x_rtc.c" type="1"/>
+      <File name="stm32f10x_spi.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm_lib/src/stm32f10x_spi.c" type="1"/>
+      <File name="stm32f10x_usart.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/stm_lib/src/stm32f10x_usart.c" type="1"/>
+      <File name="syscalls.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/syscalls/syscalls.c" type="1"/>
+      <File name="task2_storage.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/task2_storage.c" type="1"/>
+      <File name="task3_bluetooth.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/task3_bluetooth.c" type="1"/>
+      <File name="task4_leds.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/task4_leds.c" type="1"/>
+      <File name="task5_usb.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/task5_usb.c" type="1"/>
+      <File name="task6_battery.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/task6_battery.c" type="1"/>
+      <File name="fsmc_nand.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/inc/fsmc_nand.h" type="1"/>
+      <File name="hw_config.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/inc/hw_config.h" type="1"/>
+      <File name="mass_mal.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/inc/mass_mal.h" type="1"/>
+      <File name="memory.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/inc/memory.h" type="1"/>
+      <File name="nand_if.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/inc/nand_if.h" type="1"/>
+      <File name="platform_config.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/inc/platform_config.h" type="1"/>
+      <File name="stm32f10x_conf.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/inc/stm32f10x_conf.h" type="1"/>
+      <File name="stm32f10x_it.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/inc/stm32f10x_it.h" type="1"/>
+      <File name="stm32l1xx_conf.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/inc/stm32l1xx_conf.h" type="1"/>
+      <File name="stm32l1xx_it.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/inc/stm32l1xx_it.h" type="1"/>
+      <File name="stm32_eval_sdio_sd.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/inc/stm32_eval_sdio_sd.h" type="1"/>
+      <File name="usb_bot.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/inc/usb_bot.h" type="1"/>
+      <File name="usb_conf.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/inc/usb_conf.h" type="1"/>
+      <File name="usb_desc.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/inc/usb_desc.h" type="1"/>
+      <File name="usb_istr.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/inc/usb_istr.h" type="1"/>
+      <File name="usb_prop.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/inc/usb_prop.h" type="1"/>
+      <File name="usb_pwr.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/inc/usb_pwr.h" type="1"/>
+      <File name="usb_scsi.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/inc/usb_scsi.h" type="1"/>
+      <File name="hw_config.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/src/hw_config.c" type="1"/>
+      <File name="mass_mal.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/src/mass_mal.c" type="1"/>
+      <File name="memory.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/src/memory.c" type="1"/>
+      <File name="nand_if.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/src/nand_if.c" type="1"/>
+      <File name="scsi_data.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/src/scsi_data.c" type="1"/>
+      <File name="stm32f10x_it.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/src/stm32f10x_it.c" type="1"/>
+      <File name="usb_bot.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/src/usb_bot.c" type="1"/>
+      <File name="usb_desc.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/src/usb_desc.c" type="1"/>
+      <File name="usb_endp.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/src/usb_endp.c" type="1"/>
+      <File name="usb_istr.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/src/usb_istr.c" type="1"/>
+      <File name="usb_prop.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/src/usb_prop.c" type="1"/>
+      <File name="usb_pwr.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/src/usb_pwr.c" type="1"/>
+      <File name="usb_scsi.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/old/usb_mass_storage/src/usb_scsi.c" type="1"/>
+      <File name="otgd_fs_cal.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/stm32_usb-fs-device_driver/inc/otgd_fs_cal.h" type="1"/>
+      <File name="otgd_fs_dev.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/stm32_usb-fs-device_driver/inc/otgd_fs_dev.h" type="1"/>
+      <File name="otgd_fs_int.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/stm32_usb-fs-device_driver/inc/otgd_fs_int.h" type="1"/>
+      <File name="otgd_fs_pcd.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/stm32_usb-fs-device_driver/inc/otgd_fs_pcd.h" type="1"/>
+      <File name="otgd_fs_regs.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/stm32_usb-fs-device_driver/inc/otgd_fs_regs.h" type="1"/>
+      <File name="usb_core.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/stm32_usb-fs-device_driver/inc/usb_core.h" type="1"/>
+      <File name="usb_def.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/stm32_usb-fs-device_driver/inc/usb_def.h" type="1"/>
+      <File name="usb_init.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/stm32_usb-fs-device_driver/inc/usb_init.h" type="1"/>
+      <File name="usb_int.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/stm32_usb-fs-device_driver/inc/usb_int.h" type="1"/>
+      <File name="usb_lib.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/stm32_usb-fs-device_driver/inc/usb_lib.h" type="1"/>
+      <File name="usb_mem.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/stm32_usb-fs-device_driver/inc/usb_mem.h" type="1"/>
+      <File name="usb_regs.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/stm32_usb-fs-device_driver/inc/usb_regs.h" type="1"/>
+      <File name="usb_sil.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/stm32_usb-fs-device_driver/inc/usb_sil.h" type="1"/>
+      <File name="usb_type.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/stm32_usb-fs-device_driver/inc/usb_type.h" type="1"/>
+      <File name="otgd_fs_cal.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/stm32_usb-fs-device_driver/src/otgd_fs_cal.c" type="1"/>
+      <File name="otgd_fs_dev.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/stm32_usb-fs-device_driver/src/otgd_fs_dev.c" type="1"/>
+      <File name="otgd_fs_int.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/stm32_usb-fs-device_driver/src/otgd_fs_int.c" type="1"/>
+      <File name="otgd_fs_pcd.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/stm32_usb-fs-device_driver/src/otgd_fs_pcd.c" type="1"/>
+      <File name="usb_core.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/stm32_usb-fs-device_driver/src/usb_core.c" type="1"/>
+      <File name="usb_init.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/stm32_usb-fs-device_driver/src/usb_init.c" type="1"/>
+      <File name="usb_int.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/stm32_usb-fs-device_driver/src/usb_int.c" type="1"/>
+      <File name="usb_mem.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/stm32_usb-fs-device_driver/src/usb_mem.c" type="1"/>
+      <File name="usb_regs.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/stm32_usb-fs-device_driver/src/usb_regs.c" type="1"/>
+      <File name="usb_sil.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/stm32_usb-fs-device_driver/src/usb_sil.c" type="1"/>
+      <File name="fsmc_nand.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/inc/fsmc_nand.h" type="1"/>
+      <File name="hw_config.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/inc/hw_config.h" type="1"/>
+      <File name="mass_mal.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/inc/mass_mal.h" type="1"/>
+      <File name="memory.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/inc/memory.h" type="1"/>
+      <File name="nand_if.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/inc/nand_if.h" type="1"/>
+      <File name="platform_config.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/inc/platform_config.h" type="1"/>
+      <File name="stm32f10x_conf.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/inc/stm32f10x_conf.h" type="1"/>
+      <File name="stm32f10x_it.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/inc/stm32f10x_it.h" type="1"/>
+      <File name="stm32l1xx_conf.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/inc/stm32l1xx_conf.h" type="1"/>
+      <File name="stm32l1xx_it.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/inc/stm32l1xx_it.h" type="1"/>
+      <File name="stm32_eval_sdio_sd.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/inc/stm32_eval_sdio_sd.h" type="1"/>
+      <File name="usb_bot.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/inc/usb_bot.h" type="1"/>
+      <File name="usb_conf.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/inc/usb_conf.h" type="1"/>
+      <File name="usb_desc.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/inc/usb_desc.h" type="1"/>
+      <File name="usb_istr.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/inc/usb_istr.h" type="1"/>
+      <File name="usb_prop.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/inc/usb_prop.h" type="1"/>
+      <File name="usb_pwr.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/inc/usb_pwr.h" type="1"/>
+      <File name="usb_scsi.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/inc/usb_scsi.h" type="1"/>
+      <File name="hw_config.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/src/hw_config.c" type="1"/>
+      <File name="mass_mal.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/src/mass_mal.c" type="1"/>
+      <File name="memory.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/src/memory.c" type="1"/>
+      <File name="nand_if.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/src/nand_if.c" type="1"/>
+      <File name="scsi_data.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/src/scsi_data.c" type="1"/>
+      <File name="stm32f10x_it.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/src/stm32f10x_it.c" type="1"/>
+      <File name="usb_bot.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/src/usb_bot.c" type="1"/>
+      <File name="usb_desc.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/src/usb_desc.c" type="1"/>
+      <File name="usb_endp.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/src/usb_endp.c" type="1"/>
+      <File name="usb_istr.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/src/usb_istr.c" type="1"/>
+      <File name="usb_prop.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/src/usb_prop.c" type="1"/>
+      <File name="usb_pwr.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/src/usb_pwr.c" type="1"/>
+      <File name="usb_scsi.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/usb_mass_storage/src/usb_scsi.c" type="1"/>
+      <File name="usb.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/src/usb.c" type="1"/>
+      <File name="usb.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/inc/usb.h" type="1"/>
+      <File name="coocox.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/coocox.h" type="1"/>
+      <File name="coos.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/coos.h" type="1"/>
+      <File name="core.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/core.c" type="1"/>
+      <File name="event.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/event.c" type="1"/>
+      <File name="flag.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/flag.c" type="1"/>
+      <File name="hook.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/hook.c" type="1"/>
+      <File name="kernelheap.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/kernelheap.c" type="1"/>
+      <File name="mbox.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/mbox.c" type="1"/>
+      <File name="mm.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/mm.c" type="1"/>
+      <File name="mutex.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/mutex.c" type="1"/>
+      <File name="osconfig.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/osconfig.h" type="1"/>
+      <File name="oscore.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/oscore.h" type="1"/>
+      <File name="oserror.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/oserror.h" type="1"/>
+      <File name="osevent.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/osevent.h" type="1"/>
+      <File name="osflag.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/osflag.h" type="1"/>
+      <File name="oskernelheap.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/oskernelheap.h" type="1"/>
+      <File name="osmm.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/osmm.h" type="1"/>
+      <File name="osmutex.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/osmutex.h" type="1"/>
+      <File name="osqueue.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/osqueue.h" type="1"/>
+      <File name="osservicereq.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/osservicereq.h" type="1"/>
+      <File name="ostask.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/ostask.h" type="1"/>
+      <File name="ostime.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/ostime.h" type="1"/>
+      <File name="ostimer.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/ostimer.h" type="1"/>
+      <File name="queue.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/queue.c" type="1"/>
+      <File name="sem.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/sem.c" type="1"/>
+      <File name="servicereq.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/servicereq.c" type="1"/>
+      <File name="task.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/task.c" type="1"/>
+      <File name="time.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/time.c" type="1"/>
+      <File name="timer.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/timer.c" type="1"/>
+      <File name="utility.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/utility.c" type="1"/>
+      <File name="utility.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/kernel/utility.h" type="1"/>
+      <File name="arch.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/portable/arch.c" type="1"/>
+      <File name="port.c" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/portable/gcc/port.c" type="1"/>
+      <File name="osarch.h" path="../../../../../users/guille/documents/uns/ecg/git/codigo_ecg/ecg/coos/portable/osarch.h" type="1"/>
+      <File name="fsmc_nand.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/inc/fsmc_nand.h" type="1"/>
+      <File name="hw_config.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/inc/hw_config.h" type="1"/>
+      <File name="mass_mal.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/inc/mass_mal.h" type="1"/>
+      <File name="memory.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/inc/memory.h" type="1"/>
+      <File name="nand_if.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/inc/nand_if.h" type="1"/>
+      <File name="platform_config.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/inc/platform_config.h" type="1"/>
+      <File name="stm32f10x_conf.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/inc/stm32f10x_conf.h" type="1"/>
+      <File name="stm32f10x_it.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/inc/stm32f10x_it.h" type="1"/>
+      <File name="stm32l1xx_conf.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/inc/stm32l1xx_conf.h" type="1"/>
+      <File name="stm32l1xx_it.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/inc/stm32l1xx_it.h" type="1"/>
+      <File name="stm32_eval_sdio_sd.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/inc/stm32_eval_sdio_sd.h" type="1"/>
+      <File name="usb_bot.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/inc/usb_bot.h" type="1"/>
+      <File name="usb_conf.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/inc/usb_conf.h" type="1"/>
+      <File name="usb_desc.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/inc/usb_desc.h" type="1"/>
+      <File name="usb_istr.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/inc/usb_istr.h" type="1"/>
+      <File name="usb_prop.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/inc/usb_prop.h" type="1"/>
+      <File name="usb_pwr.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/inc/usb_pwr.h" type="1"/>
+      <File name="usb_scsi.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/inc/usb_scsi.h" type="1"/>
+      <File name="hw_config.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/src/hw_config.c" type="1"/>
+      <File name="mass_mal.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/src/mass_mal.c" type="1"/>
+      <File name="memory.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/src/memory.c" type="1"/>
+      <File name="nand_if.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/src/nand_if.c" type="1"/>
+      <File name="scsi_data.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/src/scsi_data.c" type="1"/>
+      <File name="stm32f10x_it.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/src/stm32f10x_it.c" type="1"/>
+      <File name="usb_bot.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/src/usb_bot.c" type="1"/>
+      <File name="usb_desc.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/src/usb_desc.c" type="1"/>
+      <File name="usb_endp.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/src/usb_endp.c" type="1"/>
+      <File name="usb_istr.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/src/usb_istr.c" type="1"/>
+      <File name="usb_prop.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/src/usb_prop.c" type="1"/>
+      <File name="usb_pwr.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/src/usb_pwr.c" type="1"/>
+      <File name="usb_scsi.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/usb_mass_storage/src/usb_scsi.c" type="1"/>
+      <File name="otgd_fs_cal.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/stm32_usb-fs-device_driver/inc/otgd_fs_cal.h" type="1"/>
+      <File name="otgd_fs_dev.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/stm32_usb-fs-device_driver/inc/otgd_fs_dev.h" type="1"/>
+      <File name="otgd_fs_int.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/stm32_usb-fs-device_driver/inc/otgd_fs_int.h" type="1"/>
+      <File name="otgd_fs_pcd.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/stm32_usb-fs-device_driver/inc/otgd_fs_pcd.h" type="1"/>
+      <File name="otgd_fs_regs.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/stm32_usb-fs-device_driver/inc/otgd_fs_regs.h" type="1"/>
+      <File name="usb_core.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/stm32_usb-fs-device_driver/inc/usb_core.h" type="1"/>
+      <File name="usb_def.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/stm32_usb-fs-device_driver/inc/usb_def.h" type="1"/>
+      <File name="usb_init.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/stm32_usb-fs-device_driver/inc/usb_init.h" type="1"/>
+      <File name="usb_int.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/stm32_usb-fs-device_driver/inc/usb_int.h" type="1"/>
+      <File name="usb_lib.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/stm32_usb-fs-device_driver/inc/usb_lib.h" type="1"/>
+      <File name="usb_mem.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/stm32_usb-fs-device_driver/inc/usb_mem.h" type="1"/>
+      <File name="usb_regs.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/stm32_usb-fs-device_driver/inc/usb_regs.h" type="1"/>
+      <File name="usb_sil.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/stm32_usb-fs-device_driver/inc/usb_sil.h" type="1"/>
+      <File name="usb_type.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/stm32_usb-fs-device_driver/inc/usb_type.h" type="1"/>
+      <File name="otgd_fs_cal.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/stm32_usb-fs-device_driver/src/otgd_fs_cal.c" type="1"/>
+      <File name="otgd_fs_dev.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/stm32_usb-fs-device_driver/src/otgd_fs_dev.c" type="1"/>
+      <File name="otgd_fs_int.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/stm32_usb-fs-device_driver/src/otgd_fs_int.c" type="1"/>
+      <File name="otgd_fs_pcd.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/stm32_usb-fs-device_driver/src/otgd_fs_pcd.c" type="1"/>
+      <File name="usb_core.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/stm32_usb-fs-device_driver/src/usb_core.c" type="1"/>
+      <File name="usb_init.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/stm32_usb-fs-device_driver/src/usb_init.c" type="1"/>
+      <File name="usb_int.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/stm32_usb-fs-device_driver/src/usb_int.c" type="1"/>
+      <File name="usb_mem.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/stm32_usb-fs-device_driver/src/usb_mem.c" type="1"/>
+      <File name="usb_regs.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/stm32_usb-fs-device_driver/src/usb_regs.c" type="1"/>
+      <File name="usb_sil.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/stm32_usb-fs-device_driver/src/usb_sil.c" type="1"/>
+      <File name="usb.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/inc/usb.h" type="1"/>
+      <File name="usb.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/board/src/usb.c" type="1"/>
+      <File name="fsmc_nand.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/inc/fsmc_nand.h" type="1"/>
+      <File name="hw_config.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/inc/hw_config.h" type="1"/>
+      <File name="mass_mal.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/inc/mass_mal.h" type="1"/>
+      <File name="memory.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/inc/memory.h" type="1"/>
+      <File name="nand_if.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/inc/nand_if.h" type="1"/>
+      <File name="platform_config.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/inc/platform_config.h" type="1"/>
+      <File name="stm32f10x_conf.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/inc/stm32f10x_conf.h" type="1"/>
+      <File name="stm32f10x_it.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/inc/stm32f10x_it.h" type="1"/>
+      <File name="stm32l1xx_conf.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/inc/stm32l1xx_conf.h" type="1"/>
+      <File name="stm32l1xx_it.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/inc/stm32l1xx_it.h" type="1"/>
+      <File name="stm32_eval_sdio_sd.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/inc/stm32_eval_sdio_sd.h" type="1"/>
+      <File name="usb_bot.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/inc/usb_bot.h" type="1"/>
+      <File name="usb_conf.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/inc/usb_conf.h" type="1"/>
+      <File name="usb_desc.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/inc/usb_desc.h" type="1"/>
+      <File name="usb_istr.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/inc/usb_istr.h" type="1"/>
+      <File name="usb_prop.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/inc/usb_prop.h" type="1"/>
+      <File name="usb_pwr.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/inc/usb_pwr.h" type="1"/>
+      <File name="usb_scsi.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/inc/usb_scsi.h" type="1"/>
+      <File name="hw_config.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/src/hw_config.c" type="1"/>
+      <File name="mass_mal.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/src/mass_mal.c" type="1"/>
+      <File name="memory.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/src/memory.c" type="1"/>
+      <File name="nand_if.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/src/nand_if.c" type="1"/>
+      <File name="scsi_data.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/src/scsi_data.c" type="1"/>
+      <File name="stm32f10x_it.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/src/stm32f10x_it.c" type="1"/>
+      <File name="usb_bot.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/src/usb_bot.c" type="1"/>
+      <File name="usb_desc.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/src/usb_desc.c" type="1"/>
+      <File name="usb_endp.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/src/usb_endp.c" type="1"/>
+      <File name="usb_istr.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/src/usb_istr.c" type="1"/>
+      <File name="usb_prop.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/src/usb_prop.c" type="1"/>
+      <File name="usb_pwr.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/src/usb_pwr.c" type="1"/>
+      <File name="usb_scsi.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/usb_mass_storage/src/usb_scsi.c" type="1"/>
+      <File name="otgd_fs_cal.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/stm32_usb-fs-device_driver/inc/otgd_fs_cal.h" type="1"/>
+      <File name="otgd_fs_dev.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/stm32_usb-fs-device_driver/inc/otgd_fs_dev.h" type="1"/>
+      <File name="otgd_fs_int.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/stm32_usb-fs-device_driver/inc/otgd_fs_int.h" type="1"/>
+      <File name="otgd_fs_pcd.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/stm32_usb-fs-device_driver/inc/otgd_fs_pcd.h" type="1"/>
+      <File name="otgd_fs_regs.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/stm32_usb-fs-device_driver/inc/otgd_fs_regs.h" type="1"/>
+      <File name="usb_core.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/stm32_usb-fs-device_driver/inc/usb_core.h" type="1"/>
+      <File name="usb_def.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/stm32_usb-fs-device_driver/inc/usb_def.h" type="1"/>
+      <File name="usb_init.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/stm32_usb-fs-device_driver/inc/usb_init.h" type="1"/>
+      <File name="usb_int.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/stm32_usb-fs-device_driver/inc/usb_int.h" type="1"/>
+      <File name="usb_lib.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/stm32_usb-fs-device_driver/inc/usb_lib.h" type="1"/>
+      <File name="usb_mem.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/stm32_usb-fs-device_driver/inc/usb_mem.h" type="1"/>
+      <File name="usb_regs.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/stm32_usb-fs-device_driver/inc/usb_regs.h" type="1"/>
+      <File name="usb_sil.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/stm32_usb-fs-device_driver/inc/usb_sil.h" type="1"/>
+      <File name="usb_type.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/stm32_usb-fs-device_driver/inc/usb_type.h" type="1"/>
+      <File name="otgd_fs_cal.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/stm32_usb-fs-device_driver/src/otgd_fs_cal.c" type="1"/>
+      <File name="otgd_fs_dev.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/stm32_usb-fs-device_driver/src/otgd_fs_dev.c" type="1"/>
+      <File name="otgd_fs_int.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/stm32_usb-fs-device_driver/src/otgd_fs_int.c" type="1"/>
+      <File name="otgd_fs_pcd.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/stm32_usb-fs-device_driver/src/otgd_fs_pcd.c" type="1"/>
+      <File name="usb_core.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/stm32_usb-fs-device_driver/src/usb_core.c" type="1"/>
+      <File name="usb_init.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/stm32_usb-fs-device_driver/src/usb_init.c" type="1"/>
+      <File name="usb_int.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/stm32_usb-fs-device_driver/src/usb_int.c" type="1"/>
+      <File name="usb_mem.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/stm32_usb-fs-device_driver/src/usb_mem.c" type="1"/>
+      <File name="usb_regs.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/stm32_usb-fs-device_driver/src/usb_regs.c" type="1"/>
+      <File name="usb_sil.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/stm32_usb-fs-device_driver/src/usb_sil.c" type="1"/>
+      <File name="usb.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/inc/usb.h" type="1"/>
+      <File name="usb.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/ecg/src/usb.c" type="1"/>
+      <File name="fsmc_nand.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/inc/fsmc_nand.h" type="1"/>
+      <File name="hw_config.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/inc/hw_config.h" type="1"/>
+      <File name="mass_mal.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/inc/mass_mal.h" type="1"/>
+      <File name="memory.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/inc/memory.h" type="1"/>
+      <File name="nand_if.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/inc/nand_if.h" type="1"/>
+      <File name="platform_config.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/inc/platform_config.h" type="1"/>
+      <File name="stm32f10x_conf.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/inc/stm32f10x_conf.h" type="1"/>
+      <File name="stm32f10x_it.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/inc/stm32f10x_it.h" type="1"/>
+      <File name="stm32l1xx_conf.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/inc/stm32l1xx_conf.h" type="1"/>
+      <File name="stm32l1xx_it.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/inc/stm32l1xx_it.h" type="1"/>
+      <File name="stm32_eval_sdio_sd.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/inc/stm32_eval_sdio_sd.h" type="1"/>
+      <File name="usb_bot.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/inc/usb_bot.h" type="1"/>
+      <File name="usb_conf.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/inc/usb_conf.h" type="1"/>
+      <File name="usb_desc.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/inc/usb_desc.h" type="1"/>
+      <File name="usb_istr.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/inc/usb_istr.h" type="1"/>
+      <File name="usb_prop.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/inc/usb_prop.h" type="1"/>
+      <File name="usb_pwr.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/inc/usb_pwr.h" type="1"/>
+      <File name="usb_scsi.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/inc/usb_scsi.h" type="1"/>
+      <File name="hw_config.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/src/hw_config.c" type="1"/>
+      <File name="mass_mal.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/src/mass_mal.c" type="1"/>
+      <File name="memory.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/src/memory.c" type="1"/>
+      <File name="nand_if.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/src/nand_if.c" type="1"/>
+      <File name="scsi_data.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/src/scsi_data.c" type="1"/>
+      <File name="stm32f10x_it.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/src/stm32f10x_it.c" type="1"/>
+      <File name="usb_bot.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/src/usb_bot.c" type="1"/>
+      <File name="usb_desc.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/src/usb_desc.c" type="1"/>
+      <File name="usb_endp.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/src/usb_endp.c" type="1"/>
+      <File name="usb_istr.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/src/usb_istr.c" type="1"/>
+      <File name="usb_prop.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/src/usb_prop.c" type="1"/>
+      <File name="usb_pwr.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/src/usb_pwr.c" type="1"/>
+      <File name="usb_scsi.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/usb_mass_storage/src/usb_scsi.c" type="1"/>
+      <File name="otgd_fs_cal.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/stm32_usb-fs-device_driver/inc/otgd_fs_cal.h" type="1"/>
+      <File name="otgd_fs_dev.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/stm32_usb-fs-device_driver/inc/otgd_fs_dev.h" type="1"/>
+      <File name="otgd_fs_int.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/stm32_usb-fs-device_driver/inc/otgd_fs_int.h" type="1"/>
+      <File name="otgd_fs_pcd.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/stm32_usb-fs-device_driver/inc/otgd_fs_pcd.h" type="1"/>
+      <File name="otgd_fs_regs.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/stm32_usb-fs-device_driver/inc/otgd_fs_regs.h" type="1"/>
+      <File name="usb_core.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/stm32_usb-fs-device_driver/inc/usb_core.h" type="1"/>
+      <File name="usb_def.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/stm32_usb-fs-device_driver/inc/usb_def.h" type="1"/>
+      <File name="usb_init.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/stm32_usb-fs-device_driver/inc/usb_init.h" type="1"/>
+      <File name="usb_int.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/stm32_usb-fs-device_driver/inc/usb_int.h" type="1"/>
+      <File name="usb_lib.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/stm32_usb-fs-device_driver/inc/usb_lib.h" type="1"/>
+      <File name="usb_mem.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/stm32_usb-fs-device_driver/inc/usb_mem.h" type="1"/>
+      <File name="usb_regs.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/stm32_usb-fs-device_driver/inc/usb_regs.h" type="1"/>
+      <File name="usb_sil.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/stm32_usb-fs-device_driver/inc/usb_sil.h" type="1"/>
+      <File name="usb_type.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/stm32_usb-fs-device_driver/inc/usb_type.h" type="1"/>
+      <File name="otgd_fs_cal.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/stm32_usb-fs-device_driver/src/otgd_fs_cal.c" type="1"/>
+      <File name="otgd_fs_dev.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/stm32_usb-fs-device_driver/src/otgd_fs_dev.c" type="1"/>
+      <File name="otgd_fs_int.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/stm32_usb-fs-device_driver/src/otgd_fs_int.c" type="1"/>
+      <File name="otgd_fs_pcd.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/stm32_usb-fs-device_driver/src/otgd_fs_pcd.c" type="1"/>
+      <File name="usb_core.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/stm32_usb-fs-device_driver/src/usb_core.c" type="1"/>
+      <File name="usb_init.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/stm32_usb-fs-device_driver/src/usb_init.c" type="1"/>
+      <File name="usb_int.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/stm32_usb-fs-device_driver/src/usb_int.c" type="1"/>
+      <File name="usb_mem.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/stm32_usb-fs-device_driver/src/usb_mem.c" type="1"/>
+      <File name="usb_regs.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/stm32_usb-fs-device_driver/src/usb_regs.c" type="1"/>
+      <File name="usb_sil.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/stm32_usb-fs-device_driver/src/usb_sil.c" type="1"/>
+      <File name="usb.c" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/src/usb.c" type="1"/>
+      <File name="usb.h" path="../../../../../users/guille/documents/uns/ecg/git/ecg/placa/inc/usb.h" type="1"/>
+      <File name="otgd_fs_cal.h" path="stm32_usb-fs-device_driver/inc/otgd_fs_cal.h" type="1"/>
+      <File name="otgd_fs_dev.h" path="stm32_usb-fs-device_driver/inc/otgd_fs_dev.h" type="1"/>
+      <File name="otgd_fs_int.h" path="stm32_usb-fs-device_driver/inc/otgd_fs_int.h" type="1"/>
+      <File name="otgd_fs_pcd.h" path="stm32_usb-fs-device_driver/inc/otgd_fs_pcd.h" type="1"/>
+      <File name="otgd_fs_regs.h" path="stm32_usb-fs-device_driver/inc/otgd_fs_regs.h" type="1"/>
+      <File name="usb_core.h" path="stm32_usb-fs-device_driver/inc/usb_core.h" type="1"/>
+      <File name="usb_def.h" path="stm32_usb-fs-device_driver/inc/usb_def.h" type="1"/>
+      <File name="usb_init.h" path="stm32_usb-fs-device_driver/inc/usb_init.h" type="1"/>
+      <File name="usb_int.h" path="stm32_usb-fs-device_driver/inc/usb_int.h" type="1"/>
+      <File name="usb_lib.h" path="stm32_usb-fs-device_driver/inc/usb_lib.h" type="1"/>
+      <File name="usb_mem.h" path="stm32_usb-fs-device_driver/inc/usb_mem.h" type="1"/>
+      <File name="usb_regs.h" path="stm32_usb-fs-device_driver/inc/usb_regs.h" type="1"/>
+      <File name="usb_sil.h" path="stm32_usb-fs-device_driver/inc/usb_sil.h" type="1"/>
+      <File name="usb_type.h" path="stm32_usb-fs-device_driver/inc/usb_type.h" type="1"/>
+      <File name="otgd_fs_cal.c" path="stm32_usb-fs-device_driver/src/otgd_fs_cal.c" type="1"/>
+      <File name="otgd_fs_dev.c" path="stm32_usb-fs-device_driver/src/otgd_fs_dev.c" type="1"/>
+      <File name="otgd_fs_int.c" path="stm32_usb-fs-device_driver/src/otgd_fs_int.c" type="1"/>
+      <File name="otgd_fs_pcd.c" path="stm32_usb-fs-device_driver/src/otgd_fs_pcd.c" type="1"/>
+      <File name="usb_core.c" path="stm32_usb-fs-device_driver/src/usb_core.c" type="1"/>
+      <File name="usb_init.c" path="stm32_usb-fs-device_driver/src/usb_init.c" type="1"/>
+      <File name="usb_int.c" path="stm32_usb-fs-device_driver/src/usb_int.c" type="1"/>
+      <File name="usb_mem.c" path="stm32_usb-fs-device_driver/src/usb_mem.c" type="1"/>
+      <File name="usb_regs.c" path="stm32_usb-fs-device_driver/src/usb_regs.c" type="1"/>
+      <File name="usb_sil.c" path="stm32_usb-fs-device_driver/src/usb_sil.c" type="1"/>
+      <File name="usb.h" path="inc/usb.h" type="1"/>
+      <File name="usb.c" path="src/usb.c" type="1"/>
+      <File name="fsmc_nand.h" path="usb_mass_storage/inc/fsmc_nand.h" type="1"/>
+      <File name="hw_config.h" path="usb_mass_storage/inc/hw_config.h" type="1"/>
+      <File name="mass_mal.h" path="usb_mass_storage/inc/mass_mal.h" type="1"/>
+      <File name="memory.h" path="usb_mass_storage/inc/memory.h" type="1"/>
+      <File name="nand_if.h" path="usb_mass_storage/inc/nand_if.h" type="1"/>
+      <File name="platform_config.h" path="usb_mass_storage/inc/platform_config.h" type="1"/>
+      <File name="stm32f10x_conf.h" path="usb_mass_storage/inc/stm32f10x_conf.h" type="1"/>
+      <File name="stm32f10x_it.h" path="usb_mass_storage/inc/stm32f10x_it.h" type="1"/>
+      <File name="stm32l1xx_conf.h" path="usb_mass_storage/inc/stm32l1xx_conf.h" type="1"/>
+      <File name="stm32l1xx_it.h" path="usb_mass_storage/inc/stm32l1xx_it.h" type="1"/>
+      <File name="stm32_eval_sdio_sd.h" path="usb_mass_storage/inc/stm32_eval_sdio_sd.h" type="1"/>
+      <File name="usb_bot.h" path="usb_mass_storage/inc/usb_bot.h" type="1"/>
+      <File name="usb_conf.h" path="usb_mass_storage/inc/usb_conf.h" type="1"/>
+      <File name="usb_desc.h" path="usb_mass_storage/inc/usb_desc.h" type="1"/>
+      <File name="usb_istr.h" path="usb_mass_storage/inc/usb_istr.h" type="1"/>
+      <File name="usb_prop.h" path="usb_mass_storage/inc/usb_prop.h" type="1"/>
+      <File name="usb_pwr.h" path="usb_mass_storage/inc/usb_pwr.h" type="1"/>
+      <File name="usb_scsi.h" path="usb_mass_storage/inc/usb_scsi.h" type="1"/>
+      <File name="hw_config.c" path="usb_mass_storage/src/hw_config.c" type="1"/>
+      <File name="mass_mal.c" path="usb_mass_storage/src/mass_mal.c" type="1"/>
+      <File name="memory.c" path="usb_mass_storage/src/memory.c" type="1"/>
+      <File name="nand_if.c" path="usb_mass_storage/src/nand_if.c" type="1"/>
+      <File name="scsi_data.c" path="usb_mass_storage/src/scsi_data.c" type="1"/>
+      <File name="stm32f10x_it.c" path="usb_mass_storage/src/stm32f10x_it.c" type="1"/>
+      <File name="usb_bot.c" path="usb_mass_storage/src/usb_bot.c" type="1"/>
+      <File name="usb_desc.c" path="usb_mass_storage/src/usb_desc.c" type="1"/>
+      <File name="usb_endp.c" path="usb_mass_storage/src/usb_endp.c" type="1"/>
+      <File name="usb_istr.c" path="usb_mass_storage/src/usb_istr.c" type="1"/>
+      <File name="usb_prop.c" path="usb_mass_storage/src/usb_prop.c" type="1"/>
+      <File name="usb_pwr.c" path="usb_mass_storage/src/usb_pwr.c" type="1"/>
+      <File name="usb_scsi.c" path="usb_mass_storage/src/usb_scsi.c" type="1"/>
+      <File name="frontend.c" path="src/frontend.c" type="1"/>
+      <File name="filter.c" path="src/filter.c" type="1"/>
+    </ExcludeFile>
+  </Target>
+  <Target name="board_Target_RAM" isCurrent="0">
+    <Device manufacturerId="9" manufacturerName="ST" chipId="336" chipName="STM32F105VB" boardId="" boardName=""/>
+    <BuildOption>
+      <Compile>
+        <Option name="OptimizationLevel" value="0"/>
+        <Option name="UseFPU" value="0"/>
+        <Option name="UserEditCompiler" value=""/>
+        <Includepaths>
+          <Includepath path="."/>
+        </Includepaths>
+        <DefinedSymbols>
+          <Define name="STM32F105VB"/>
+          <Define name="STM32F10X_CL"/>
+          <Define name="USE_STDPERIPH_DRIVER"/>
+          <Define name="__ASSEMBLY__"/>
+        </DefinedSymbols>
+      </Compile>
+      <Link useDefault="0">
+        <Option name="DiscardUnusedSection" value="0"/>
+        <Option name="UseCLib" value="0"/>
+        <Option name="UserEditLinkder" value=""/>
+        <LinkedLibraries/>
+        <MemoryAreas debugInFlashNotRAM="0">
+          <Memory name="IROM1" type="ReadOnly" size="0x00020000" startValue="0x08000000"/>
+          <Memory name="IRAM1" type="ReadWrite" size="0x00008000" startValue="0x20000000"/>
+          <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
+          <Memory name="IRAM2" type="ReadWrite" size="" startValue=""/>
+        </MemoryAreas>
+        <LocateLinkFile path="link.ld" type="0"/>
+      </Link>
+      <Output>
+        <Option name="OutputFileType" value="0"/>
+        <Option name="Path" value="C:/CooCox/CoIDE/workspace/ecg/board"/>
+        <Option name="Name" value="board_Target_RAM"/>
+        <Option name="HEX" value="1"/>
+        <Option name="BIN" value="1"/>
+      </Output>
+      <User>
+        <UserRun name="Run#1" type="Before" checked="0" value=""/>
+        <UserRun name="Run#1" type="After" checked="0" value=""/>
+      </User>
+    </BuildOption>
+    <DebugOption>
+      <Option name="org.coocox.codebugger.gdbjtag.core.adapter" value="ST-Link"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.debugMode" value="SWD"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.clockDiv" value="1M"/>
+      <Option name="org.coocox.codebugger.gdbjtag.corerunToMain" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkgdbserver" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.userDefineGDBScript" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.targetEndianess" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkResetMode" value="Type 0: Normal"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.resetMode" value="SYSRESETREQ"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifSemihost" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifCacheRom" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ipAddress" value="127.0.0.1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.portNumber" value="2009"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.autoDownload" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.verify" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.downloadFuction" value="Erase Effected"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.defaultAlgorithm" value="C:/CooCox/CoIDE/flash/STM32F10x_CL_128.elf"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jflashtool" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.coredebugInRam" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jflashscript" value=""/>
+    </DebugOption>
+    <ExcludeFile/>
+  </Target>
+  <Components path="./">
+    <Component id="30" name="C Library" path="" type="2"/>
+    <Component id="31" name="Retarget printf" path="" type="2"/>
+    <Component id="33" name="Semihosting" path="" type="2"/>
+    <Component id="50" name="CMSIS core" path="" type="2"/>
+    <Component id="440" name="RCC" path="" type="2"/>
+    <Component id="444" name="GPIO" path="" type="2"/>
+    <Component id="447" name="DAC" path="" type="2"/>
+    <Component id="452" name="SPI" path="" type="2"/>
+    <Component id="456" name="TIM" path="" type="2"/>
+    <Component id="458" name="USART" path="" type="2"/>
+    <Component id="467" name="MISC" path="" type="2"/>
+    <Component id="498" name="CMSIS Boot" path="" type="2"/>
+  </Components>
+  <Files>
+    <File name="USB_MASS_STORAGE/src/usb_scsi.c" path="USB_MASS_STORAGE/src/usb_scsi.c" type="1"/>
+    <File name="USB_MASS_STORAGE/src/stm32f10x_it.c" path="USB_MASS_STORAGE/src/stm32f10x_it.c" type="1"/>
+    <File name="STM32_USB-FS-Device_Driver/inc/usb_lib.h" path="STM32_USB-FS-Device_Driver/inc/usb_lib.h" type="1"/>
+    <File name="cmsis_boot/startup/startup_stm32f10x_cl.c" path="cmsis_boot/startup/startup_stm32f10x_cl.c" type="1"/>
+    <File name="USB_MASS_STORAGE/inc/stm32_eval_sdio_sd.h" path="USB_MASS_STORAGE/inc/stm32_eval_sdio_sd.h" type="1"/>
+    <File name="inc/ecg.h" path="inc/ecg.h" type="1"/>
+    <File name="src" path="" type="2"/>
+    <File name="USB_MASS_STORAGE/src/scsi_data.c" path="USB_MASS_STORAGE/src/scsi_data.c" type="1"/>
+    <File name="src/leds.c" path="src/leds.c" type="1"/>
+    <File name="STM32_USB-FS-Device_Driver/src/otgd_fs_int.c" path="STM32_USB-FS-Device_Driver/src/otgd_fs_int.c" type="1"/>
+    <File name="stm_lib/inc/stm32f10x_pwr.h" path="stm_lib/inc/stm32f10x_pwr.h" type="1"/>
+    <File name="STM32_USB-FS-Device_Driver/inc/otgd_fs_int.h" path="STM32_USB-FS-Device_Driver/inc/otgd_fs_int.h" type="1"/>
+    <File name="USB_MASS_STORAGE/inc/stm32f10x_conf.h" path="USB_MASS_STORAGE/inc/stm32f10x_conf.h" type="1"/>
+    <File name="src/asm/gcc" path="" type="2"/>
+    <File name="USB_MASS_STORAGE/inc/nand_if.h" path="USB_MASS_STORAGE/inc/nand_if.h" type="1"/>
+    <File name="stm_lib/src/misc.c" path="stm_lib/src/misc.c" type="1"/>
+    <File name="USB_MASS_STORAGE/inc/stm32l1xx_it.h" path="USB_MASS_STORAGE/inc/stm32l1xx_it.h" type="1"/>
+    <File name="cmsis_boot/stm32f10x.h" path="cmsis_boot/stm32f10x.h" type="1"/>
+    <File name="inc/usb.h" path="inc/usb.h" type="1"/>
+    <File name="cmsis_boot/stm32f10x_conf.h" path="cmsis_boot/stm32f10x_conf.h" type="1"/>
+    <File name="STM32_USB-FS-Device_Driver/src" path="" type="2"/>
+    <File name="STM32_USB-FS-Device_Driver/src/otgd_fs_pcd.c" path="STM32_USB-FS-Device_Driver/src/otgd_fs_pcd.c" type="1"/>
+    <File name="stm_lib/inc/stm32f10x_flash.h" path="stm_lib/inc/stm32f10x_flash.h" type="1"/>
+    <File name="syscalls/syscalls.c" path="syscalls/syscalls.c" type="1"/>
+    <File name="stm_lib/inc/stm32f10x_spi.h" path="stm_lib/inc/stm32f10x_spi.h" type="1"/>
+    <File name="src/asm/gcc/cr4_fft_64_stm32.s" path="src/asm/gcc/cr4_fft_64_stm32.s" type="1"/>
+    <File name="stm_lib/src/stm32f10x_adc.c" path="stm_lib/src/stm32f10x_adc.c" type="1"/>
+    <File name="STM32_USB-FS-Device_Driver/src/usb_core.c" path="STM32_USB-FS-Device_Driver/src/usb_core.c" type="1"/>
+    <File name="STM32_USB-FS-Device_Driver/inc/usb_mem.h" path="STM32_USB-FS-Device_Driver/inc/usb_mem.h" type="1"/>
+    <File name="src/asm/gcc/cr4_fft_1024_stm32.s" path="src/asm/gcc/cr4_fft_1024_stm32.s" type="1"/>
+    <File name="STM32_USB-FS-Device_Driver/src/otgd_fs_dev.c" path="STM32_USB-FS-Device_Driver/src/otgd_fs_dev.c" type="1"/>
+    <File name="USB_MASS_STORAGE/src" path="" type="2"/>
+    <File name="stdio/printf.c" path="stdio/printf.c" type="1"/>
+    <File name="stm_lib/src/stm32f10x_bkp.c" path="stm_lib/src/stm32f10x_bkp.c" type="1"/>
+    <File name="stm_lib/src/stm32f10x_gpio.c" path="stm_lib/src/stm32f10x_gpio.c" type="1"/>
+    <File name="STM32_USB-FS-Device_Driver/inc/usb_regs.h" path="STM32_USB-FS-Device_Driver/inc/usb_regs.h" type="1"/>
+    <File name="STM32_USB-FS-Device_Driver/inc" path="" type="2"/>
+    <File name="stm_lib/inc/stm32f10x_usart.h" path="stm_lib/inc/stm32f10x_usart.h" type="1"/>
+    <File name="USB_MASS_STORAGE/inc/usb_scsi.h" path="USB_MASS_STORAGE/inc/usb_scsi.h" type="1"/>
+    <File name="USB_MASS_STORAGE/inc/fsmc_nand.h" path="USB_MASS_STORAGE/inc/fsmc_nand.h" type="1"/>
+    <File name="USB_MASS_STORAGE/inc/platform_config.h" path="USB_MASS_STORAGE/inc/platform_config.h" type="1"/>
+    <File name="USB_MASS_STORAGE/src/usb_istr.c" path="USB_MASS_STORAGE/src/usb_istr.c" type="1"/>
+    <File name="cmsis_boot/system_stm32f10x.c" path="cmsis_boot/system_stm32f10x.c" type="1"/>
+    <File name="stdio" path="" type="2"/>
+    <File name="stm_lib/inc/misc.h" path="stm_lib/inc/misc.h" type="1"/>
+    <File name="STM32_USB-FS-Device_Driver/src/usb_sil.c" path="STM32_USB-FS-Device_Driver/src/usb_sil.c" type="1"/>
+    <File name="STM32_USB-FS-Device_Driver/inc/usb_def.h" path="STM32_USB-FS-Device_Driver/inc/usb_def.h" type="1"/>
+    <File name="USB_MASS_STORAGE/inc/usb_conf.h" path="USB_MASS_STORAGE/inc/usb_conf.h" type="1"/>
+    <File name="USB_MASS_STORAGE/inc/stm32l1xx_conf.h" path="USB_MASS_STORAGE/inc/stm32l1xx_conf.h" type="1"/>
+    <File name="src/iir_stm32.c" path="src/iir_stm32.c" type="1"/>
+    <File name="src/asm" path="" type="2"/>
+    <File name="USB_MASS_STORAGE/src/hw_config.c" path="USB_MASS_STORAGE/src/hw_config.c" type="1"/>
+    <File name="STM32_USB-FS-Device_Driver/inc/usb_type.h" path="STM32_USB-FS-Device_Driver/inc/usb_type.h" type="1"/>
+    <File name="stm_lib/src/stm32f10x_rcc.c" path="stm_lib/src/stm32f10x_rcc.c" type="1"/>
+    <File name="STM32_USB-FS-Device_Driver/src/usb_init.c" path="STM32_USB-FS-Device_Driver/src/usb_init.c" type="1"/>
+    <File name="src/usb.c" path="src/usb.c" type="1"/>
+    <File name="inc/battery.h" path="inc/battery.h" type="1"/>
+    <File name="inc/filter.h" path="inc/filter.h" type="1"/>
+    <File name="inc/ECG_board.h" path="inc/ECG_board.h" type="1"/>
+    <File name="stm_lib/inc/stm32f10x_bkp.h" path="stm_lib/inc/stm32f10x_bkp.h" type="1"/>
+    <File name="STM32_USB-FS-Device_Driver/inc/otgd_fs_cal.h" path="STM32_USB-FS-Device_Driver/inc/otgd_fs_cal.h" type="1"/>
+    <File name="USB_MASS_STORAGE/src/usb_desc.c" path="USB_MASS_STORAGE/src/usb_desc.c" type="1"/>
+    <File name="USB_MASS_STORAGE/inc/memory.h" path="USB_MASS_STORAGE/inc/memory.h" type="1"/>
+    <File name="stm_lib/src" path="" type="2"/>
+    <File name="cmsis" path="" type="2"/>
+    <File name="stm_lib" path="" type="2"/>
+    <File name="stm_lib/inc/stm32f10x_exti.h" path="stm_lib/inc/stm32f10x_exti.h" type="1"/>
+    <File name="STM32_USB-FS-Device_Driver/inc/otgd_fs_dev.h" path="STM32_USB-FS-Device_Driver/inc/otgd_fs_dev.h" type="1"/>
+    <File name="stm_lib/inc/stm32f10x_adc.h" path="stm_lib/inc/stm32f10x_adc.h" type="1"/>
+    <File name="cmsis_boot/system_stm32f10x.h" path="cmsis_boot/system_stm32f10x.h" type="1"/>
+    <File name="USB_MASS_STORAGE/inc/usb_pwr.h" path="USB_MASS_STORAGE/inc/usb_pwr.h" type="1"/>
+    <File name="USB_MASS_STORAGE/inc" path="" type="2"/>
+    <File name="STM32_USB-FS-Device_Driver/inc/otgd_fs_pcd.h" path="STM32_USB-FS-Device_Driver/inc/otgd_fs_pcd.h" type="1"/>
+    <File name="inc/SPI_flash.h" path="inc/SPI_flash.h" type="1"/>
+    <File name="USB_MASS_STORAGE/inc/usb_bot.h" path="USB_MASS_STORAGE/inc/usb_bot.h" type="1"/>
+    <File name="USB_MASS_STORAGE/inc/usb_desc.h" path="USB_MASS_STORAGE/inc/usb_desc.h" type="1"/>
+    <File name="stm_lib/src/stm32f10x_rtc.c" path="stm_lib/src/stm32f10x_rtc.c" type="1"/>
+    <File name="inc/table_fft.h" path="inc/table_fft.h" type="1"/>
+    <File name="USB_MASS_STORAGE/src/usb_bot.c" path="USB_MASS_STORAGE/src/usb_bot.c" type="1"/>
+    <File name="stm_lib/inc/stm32f10x_tim.h" path="stm_lib/inc/stm32f10x_tim.h" type="1"/>
+    <File name="STM32_USB-FS-Device_Driver/src/otgd_fs_cal.c" path="STM32_USB-FS-Device_Driver/src/otgd_fs_cal.c" type="1"/>
+    <File name="cmsis_boot" path="" type="2"/>
+    <File name="src/asm/gcc/PID_stm32.s" path="src/asm/gcc/PID_stm32.s" type="1"/>
+    <File name="USB_MASS_STORAGE/src/usb_pwr.c" path="USB_MASS_STORAGE/src/usb_pwr.c" type="1"/>
+    <File name="USB_MASS_STORAGE/src/mass_mal.c" path="USB_MASS_STORAGE/src/mass_mal.c" type="1"/>
+    <File name="semihosting/sh_cmd.s" path="semihosting/sh_cmd.s" type="1"/>
+    <File name="USB_MASS_STORAGE/src/usb_prop.c" path="USB_MASS_STORAGE/src/usb_prop.c" type="1"/>
+    <File name="stm_lib/src/stm32f10x_tim.c" path="stm_lib/src/stm32f10x_tim.c" type="1"/>
+    <File name="STM32_USB-FS-Device_Driver/inc/otgd_fs_regs.h" path="STM32_USB-FS-Device_Driver/inc/otgd_fs_regs.h" type="1"/>
+    <File name="cmsis_boot/startup" path="" type="2"/>
+    <File name="semihosting/semihosting.c" path="semihosting/semihosting.c" type="1"/>
+    <File name="stm_lib/src/stm32f10x_spi.c" path="stm_lib/src/stm32f10x_spi.c" type="1"/>
+    <File name="stm_lib/inc/stm32f10x_dac.h" path="stm_lib/inc/stm32f10x_dac.h" type="1"/>
+    <File name="USB_MASS_STORAGE/src/nand_if.c" path="USB_MASS_STORAGE/src/nand_if.c" type="1"/>
+    <File name="stm_lib/src/stm32f10x_dac.c" path="stm_lib/src/stm32f10x_dac.c" type="1"/>
+    <File name="cmsis/core_cm3.c" path="cmsis/core_cm3.c" type="1"/>
+    <File name="USB_MASS_STORAGE" path="" type="2"/>
+    <File name="USB_MASS_STORAGE/inc/mass_mal.h" path="USB_MASS_STORAGE/inc/mass_mal.h" type="1"/>
+    <File name="stm_lib/src/stm32f10x_usart.c" path="stm_lib/src/stm32f10x_usart.c" type="1"/>
+    <File name="STM32_USB-FS-Device_Driver/inc/usb_core.h" path="STM32_USB-FS-Device_Driver/inc/usb_core.h" type="1"/>
+    <File name="stm_lib/inc/stm32f10x_rtc.h" path="stm_lib/inc/stm32f10x_rtc.h" type="1"/>
+    <File name="stm_lib/src/stm32f10x_pwr.c" path="stm_lib/src/stm32f10x_pwr.c" type="1"/>
+    <File name="src/main.c" path="src/main.c" type="1"/>
+    <File name="inc/global.h" path="inc/global.h" type="1"/>
+    <File name="USB_MASS_STORAGE/inc/hw_config.h" path="USB_MASS_STORAGE/inc/hw_config.h" type="1"/>
+    <File name="stm_lib/inc/stm32f10x_gpio.h" path="stm_lib/inc/stm32f10x_gpio.h" type="1"/>
+    <File name="USB_MASS_STORAGE/inc/stm32f10x_it.h" path="USB_MASS_STORAGE/inc/stm32f10x_it.h" type="1"/>
+    <File name="USB_MASS_STORAGE/inc/usb_istr.h" path="USB_MASS_STORAGE/inc/usb_istr.h" type="1"/>
+    <File name="inc/leds.h" path="inc/leds.h" type="1"/>
+    <File name="cmsis/core_cm3.h" path="cmsis/core_cm3.h" type="1"/>
+    <File name="STM32_USB-FS-Device_Driver/inc/usb_init.h" path="STM32_USB-FS-Device_Driver/inc/usb_init.h" type="1"/>
+    <File name="stm_lib/src/stm32f10x_exti.c" path="stm_lib/src/stm32f10x_exti.c" type="1"/>
+    <File name="STM32_USB-FS-Device_Driver/inc/usb_int.h" path="STM32_USB-FS-Device_Driver/inc/usb_int.h" type="1"/>
+    <File name="semihosting" path="" type="2"/>
+    <File name="inc" path="" type="2"/>
+    <File name="STM32_USB-FS-Device_Driver/src/usb_int.c" path="STM32_USB-FS-Device_Driver/src/usb_int.c" type="1"/>
+    <File name="src/asm/gcc/fir_stm32.s" path="src/asm/gcc/fir_stm32.s" type="1"/>
+    <File name="USB_MASS_STORAGE/src/memory.c" path="USB_MASS_STORAGE/src/memory.c" type="1"/>
+    <File name="USB_MASS_STORAGE/src/usb_endp.c" path="USB_MASS_STORAGE/src/usb_endp.c" type="1"/>
+    <File name="STM32_USB-FS-Device_Driver/src/usb_mem.c" path="STM32_USB-FS-Device_Driver/src/usb_mem.c" type="1"/>
+    <File name="STM32_USB-FS-Device_Driver" path="" type="2"/>
+    <File name="stm_lib/src/stm32f10x_flash.c" path="stm_lib/src/stm32f10x_flash.c" type="1"/>
+    <File name="STM32_USB-FS-Device_Driver/inc/usb_sil.h" path="STM32_USB-FS-Device_Driver/inc/usb_sil.h" type="1"/>
+    <File name="stm_lib/inc/stm32f10x_rcc.h" path="stm_lib/inc/stm32f10x_rcc.h" type="1"/>
+    <File name="STM32_USB-FS-Device_Driver/src/usb_regs.c" path="STM32_USB-FS-Device_Driver/src/usb_regs.c" type="1"/>
+    <File name="syscalls" path="" type="2"/>
+    <File name="src/asm/gcc/iirarma_stm32.s" path="src/asm/gcc/iirarma_stm32.s" type="1"/>
+    <File name="USB_MASS_STORAGE/inc/usb_prop.h" path="USB_MASS_STORAGE/inc/usb_prop.h" type="1"/>
+    <File name="semihosting/semihosting.h" path="semihosting/semihosting.h" type="1"/>
+    <File name="src/asm/gcc/cr4_fft_256_stm32.s" path="src/asm/gcc/cr4_fft_256_stm32.s" type="1"/>
+    <File name="stm_lib/inc" path="" type="2"/>
+  </Files>
+</Project>
